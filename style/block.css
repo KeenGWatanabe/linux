@@ -1,0 +1,23 @@
+#boxes {
+  content: "";
+  display: table;
+  clear: both;
+}
+div-b {
+  float: left;
+  height: 40px;
+  width: 70%;
+  /*padding: 0 0px;*/
+}
+#column1 {
+  width: 220px;
+}
+#column2 {
+  margin-top: 25px;
+  width: 180px;
+}
+
+h2 {
+  color: #000000;
+  text-align: left;
+}
