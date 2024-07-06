@@ -35,7 +35,18 @@
 
     <input id="text_a" type="text;" size="50px;" />
     <p id="answer"></p>
-    <button class="dropbtn" style="background-color: red; color: white; border-color:aliceblue;" onclick="question()">Chat</button>
+
+    <div class="tooltip">
+      <div class="dropdown">
+    <button class="dropbtn" onclick="question()">Chat</button>
+    <div class="dropdown-content" id="myDropdown">
+      <input id="myInput" onkeyup="filterFunction()" placeholder="Search.." type="text" />
+      <a href="#" onclick="displayAnswer('a32')">problems!</a>
+      <a href="#" onclick="displayAnswer('a33')">virtual office</a>
+
+    </div>
+  </div>
+  <span class="tooltiptext">click selected item, click chat for response </span> 
     <div class="dropdown">
         <button class="dropbtn" style="border-color:aliceblue;"onclick="dropdown()">about</button>
         <div class="dropdown-content" id="myDropdown">

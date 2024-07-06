@@ -11,29 +11,28 @@ function question() {
 else if(inputText.toLowerCase().indexOf("thank you")>-1){
 			document.getElementById("answer").innerHTML="You are welcome.不用客气。";}
 
-//s1-lifesaving*
-else if(inputText.toLowerCase().indexOf("lss")>-1&&inputText.toLowerCase().indexOf("what")>-1){document.getElementById("answer").innerHTML=`SLSS - Singapore Life Saving Society<br>RLSS - Royal Life Saving Society<br>SLSAA - Surf Life Saving Association of Australia`;}
+//cmd ref-basic*
+else if(inputText.toLowerCase().indexOf("list")>-1||inputText.toLowerCase().indexOf("directory")>-1){document.getElementById("answer").innerHTML=`ls [option]:  List the contents of the 
+current directory.`;}
 
-else if(inputText.toLowerCase().indexOf("lifesaving")>-1&&inputText.toLowerCase().indexOf("what")>-1||inputText.toLowerCase().indexOf("lifesaving")>-1&&inputText.toLowerCase().indexOf("defin")>-1){document.getElementById("answer").innerHTML=`Generally define as the saving of human life, through the prevention of drowning.  Thus, it involves rescue operations in and around water, as well as drowning prevention methodology.<br><a href="https://www.merriam-webster.com/dictionary/lifesaving" target="_blank">merriam-webster on lifesaving</a><br><a href="https://www.cdc.gov/drowning/facts/index.html#:~:text=What%20is%20drowning%3F,person%20survives%20a%20drowning%20incident." target="_blank">CDC on drowning</a>`;}
+else if(inputText.toLowerCase().indexOf("display")>-1||inputText.toLowerCase().indexOf("content")>-1||inputText.toLowerCase().indexOf("lifesaving")>-1&&inputText.toLowerCase().indexOf("defin")>-1){document.getElementById("answer").innerHTML=`cat  
+[file-name]: Display the contents of 
+a text file on the screen`;}
 
-else if(inputText.toLowerCase().indexOf("drown")>-1&&inputText.toLowerCase().indexOf("what")>-1||inputText.toLowerCase().indexOf("drown")>-1&&inputText.toLowerCase().indexOf("how")>-1||inputText.toLowerCase().indexOf("drown")>-1&&inputText.toLowerCase().indexOf("people")>-1){document.getElementById("answer").innerHTML=`"A process of experiencing respiratory impairment from fluid submersion/immersion". Survivors of drowning may suffer disabilities or costly aftercare.<br><a href="https://www.cdc.gov/drowning/facts/index.html#:~:text=What%20is%20drowning%3F,person%20survives%20a%20drowning%20incident." target="_blank">CDC on drowning</a>`;}
+else if(inputText.toLowerCase().indexOf("change")>-1&&inputText.toLowerCase().indexOf("directory")>-1||inputText.toLowerCase().indexOf("another")>-1&&inputText.toLowerCase().indexOf("directory")>-1){document.getElementById("answer").innerHTML=`cd /etc:  Change from one directory to another.`;}
 
-else if(inputText.toLowerCase().indexOf("slss")>-1&&inputText.toLowerCase().indexOf("what")>-1||inputText.toLowerCase().indexOf("slss")>-1&&inputText.toLowerCase().indexOf("who")>-1||inputText.toLowerCase().indexOf("lifesaving society")>-1&&inputText.toLowerCase().indexOf("what")>-1){document.getElementById("answer").innerHTML=`The acronym SLSS stands for Singapore Lifesaving Society, is a non-profit organisation, affiliated with Royal Life Saving Society (RLSS). The syllabus of your lifesaving awards originated from RLSS with adaptation for regional environment where suitable. <br><a href="https://www.slss.org.sg/" target="_blank">SLSS website</a><br><a href="https://www.rlss.org.uk/" target="_blank">RLSS website</a>`;}	
+else if(inputText.toLowerCase().indexOf("display")>-1&&inputText.toLowerCase().indexOf("current")>-1||inputText.toLowerCase().indexOf("current")>-1&&inputText.toLowerCase().indexOf("directory")>-1){document.getElementById("answer").innerHTML=` pwd: Displays the present working directory.`;}	
 
-else if(inputText.toLowerCase().indexOf("risk")>-1&&inputText.toLowerCase().indexOf("lifesaving")>-1||inputText.toLowerCase().indexOf("risk")>-1&&inputText.toLowerCase().indexOf("what")>-1||inputText.toLowerCase().indexOf("risk")>-1&&inputText.toLowerCase().indexOf("manage")>-1){document.getElementById("answer").innerHTML=`Activity risks arises with combination of the environment, hazards, skills level, awareness, people.<br>This can be manage in view of risk severity, likelihood of occurence, level of risk. When humans are aware of risk to life, will attempt appropriate actions to mitigate/avoid those risks.<br>The instructor's risk awareness should be more, and has reponsibility in ensuring a safe risk managed environment to conduct classes,<br>ongoing the students are inculcated with risk management skills and awareness throughout the course as well.
-`;}
+else if(inputText.toLowerCase().indexOf("display")>-1&&inputText.toLowerCase().indexOf("user")>-1||inputText.toLowerCase().indexOf("current")>-1&&inputText.toLowerCase().indexOf("user")>-1){document.getElementById("answer").innerHTML=`whoami: Displays the username of the current user.`;}
 
-else if(inputText.toLowerCase().indexOf("insur")>-1&&inputText.toLowerCase().indexOf("lifesaving")>-1||inputText.toLowerCase().indexOf("insur")>-1&&inputText.toLowerCase().indexOf("what")>-1||inputText.toLowerCase().indexOf("insur")>-1&&inputText.toLowerCase().indexOf("risk")>-1){document.getElementById("answer").innerHTML=`Generally, Singapore has no insurance for sports coaches' activities, participants can only rely on <b>personal accident insurance</b> for on individual purchase.  Do check your policy's terms and conditions if there is any clause that excludes coverage in part-taking certain activities, example car racing, sky diving, mountain climbing and high risks extreme sports are common exclusions in insurance policies.  Swimming and lifesaving lessons have not been specifically excluded in personal accidents policies so far.<br>Accidents occuring in certain venues are covered by <b>public liability insurace</b> undertaken by property owners.`;}
-
-
-//s1-lifesaving***
+else if(inputText.toLowerCase().indexOf("create")>-1&&inputText.toLowerCase().indexOf("file")>-1||inputText.toLowerCase().indexOf("update")>-1&&inputText.toLowerCase().indexOf("file")>-1){document.getElementById("answer").innerHTML=`touch [file-name]: Create a new empty file or update the timestamp on an existing file`;}
 
 
-//s2-hygiene*
-else if(inputText.toLowerCase().indexOf("disease")>-1&&inputText.toLowerCase().indexOf("transmi")>-1||inputText.toLowerCase().indexOf("disease")>-1&&inputText.toLowerCase().indexOf("transfer")>-1){document.getElementById("answer").innerHTML=`some transmissable diseases in the cause of lifesaving to be aware of are: <br>[]colds, <br>[]influenza, <br>[]measles and mumps, <br>[]glandular fever, <br>[]Hepatitis A or B, <br>[]AIDS, <br>[]SARS, <br>[]Herpes, <br>[]Tuberculosis, <br>[]some forms of meningitis, <br>[]some skin infections.-Reference from SLSS manual`;}
-//s2-hygiene***
-//s3-rescue*
-else if(inputText.toLowerCase().indexOf("rescue")>-1&&inputText.toLowerCase().indexOf("drown")>-1||inputText.toLowerCase().indexOf("rescue")>-1&&inputText.toLowerCase().indexOf("steps")>-1&&inputText.toLowerCase().indexOf("drown")>-1){document.getElementById("answer").innerHTML=`Sequence of a lifesaver's rescue steps:<br> [] Awareness - recognise emergency & accept responsibility <br>[] Assess situation and make informed judgement <br>[] Action a plan & act on the rescue <br>[] Aftercare - give aid until medical help arrive.(RLSS manual reference)`;}
+else if(inputText.toLowerCase().indexOf("display")>-1&&inputText.toLowerCase().indexOf("manual")>-1||inputText.toLowerCase().indexOf("display")>-1&&inputText.toLowerCase().indexOf("help")>-1){document.getElementById("answer").innerHTML=`man [command]: Display manual, or help, pages for a specific command.`;}
+
+else if(inputText.toLowerCase().indexOf("describe")>-1&&inputText.toLowerCase().indexOf("cmd")>-1||inputText.toLowerCase().indexOf("describe")>-1&&inputText.toLowerCase().indexOf("command")>-1){document.getElementById("answer").innerHTML=`whatis [command]:  Provides a brief description of the  
+specified command.`;}
+// cmd-basic***
 
 else if(inputText.toLowerCase().indexOf("rescue")>-1&&inputText.toLowerCase().indexOf("principle")>-1||inputText.toLowerCase().indexOf("rescue")>-1&&inputText.toLowerCase().indexOf("steps")>-1){document.getElementById("answer").innerHTML=`Sequence of a lifesaver's rescue steps: <br>[] Alert to an emergencty <br>[] Accept rescue responsibility <br>[] Assess situation <br>[] Action a plan <br>[] Act on the rescue <br>[] Aftercare-tel. no. to report casualty's name, hospital sent to.(Reference from SLSS manual)`;}
 
