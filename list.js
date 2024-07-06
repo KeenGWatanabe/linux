@@ -23,15 +23,15 @@ else if (elementId === 'syllabus') {
 else if (elementId === 'disclaimer') {
   alert(`This content is created for trainee and trained lifesaver's references only.  Context of saving methodology is subject to relevant skills, experiences and expertise interpretation, content here are by no means comprehensive enough to be used alone. The proper way to be an effective lifesaver is to undertake a course of training provided by a licensed trainer and certified by a recognised lifesaving authority. (chatbot developer)`);
 }
-else if (elementId === 's2Hygiene') {
+else if (elementId === 's1') {
   window.open(href="list/s2Hygiene.html",'chat AI','resizable,height=300,width=500');
 
 }
-else if (elementId === 's3Rescue') {
+else if (elementId === 's2') {
   window.open(href="list/s3Rescue.html",'chat AI','resizable,height=300,width=500');
 }
-else if (elementId === 's3Tow') {
-  window.open(href="list/s3Tow.html",'chat AI','resizable,height=300,width=500');
+else if (elementId === 's3') {
+  window.open(href="list/s3.html",'chat AI','resizable,height=300,width=500');
 }
 else if (elementId === 's4Resuscitation') {
   window.open(href="list/s4Resuscitation.html",'chat AI','resizable,height=300,width=500');
