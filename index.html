@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/block.css">
     <link rel="stylesheet" href="style/tooltip.css">
-    <link rel="stylesheet" href="/style/dropdown.css">
+    <link rel="stylesheet" href="style/dropdown.css">
     <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
       
 </head>
@@ -25,8 +25,8 @@
       <div class="dropdown">
         <button class="dropbtn" onclick="question()">Chat</button>
           <div class="dropdown-content" id="myDropdown3">
-            <input id="myInput3" onkeyup="filterFunction()" placeholder="Search.." type="text" />
-              <li class="title">------------basic cmd-----------</li>  
+            <input class="title" id="myInput3" onkeyup="filterFunction()" placeholder="Search.." type="text" />
+              <li>-----------basic cmd----------</li>  
               <a href="#" onclick="displayAnswer('a1')">list</a>
               <a href="#" onclick="displayAnswer('a2')">content</a>
               <a href="#" onclick="displayAnswer('a3')">directory</a>
@@ -34,7 +34,7 @@
               <a href="#" onclick="displayAnswer('a5')">current user</a>
               <a href="#" onclick="displayAnswer('a6')">create file</a>
               <a href="#" onclick="displayAnswer('a7')">help</a>
-              <li>------------usr grp cmd-----------</li>
+              <li>-----------usr grp cmd----------</li>
               <a href="#" onclick="displayAnswer('a8')">usr pw</a>
               <a href="#" onclick="displayAnswer('a9')">pw settings</a>
               <a href="#" onclick="displayAnswer('a10')">curr usr</a>
@@ -49,7 +49,7 @@
               <a href="#" onclick="displayAnswer('a19')">switch usr</a>
               <a href="#" onclick="displayAnswer('a20')">delegate privileges</a>
               <a href="#" onclick="displayAnswer('a21')">authorize usr</a>
-              <li>------------permissions cmd-----------</li>
+              <li>-----------permissions cmd----------</li>
               <a href="#" onclick="displayAnswer('a22')">alter default</a>
               <a href="#" onclick="displayAnswer('a23')">modify permissions</a>
               <a href="#" onclick="displayAnswer('a24')">change owner</a>
@@ -60,7 +60,7 @@
               <a href="#" onclick="displayAnswer('a29')">chg attributes</a>
               <a href="#" onclick="displayAnswer('a30')">retrieve ACL</a>
               <a href="#" onclick="displayAnswer('a31')">chg ACL permission</a>
-              <li>------------file mgt cmd-----------</li>
+              <li>-----------file mgt cmd----------</li>
               <a href="#" onclick="displayAnswer('a32')">file metadata</a>
               <a href="#" onclick="displayAnswer('a33')">file info</a>
               <a href="#" onclick="displayAnswer('a34')">create links</a>
