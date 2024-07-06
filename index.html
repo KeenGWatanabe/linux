@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lifesaving AI</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body  class="body">
+    <h3 style="padding: 0px; font-family: arial;">Chat with Lifeguard<br/></h3>
+        <a>references from Singapore Lifesaving Society's Manual (SLSS) &nbsp;&nbsp;</a>
+        <div class="dropdown">
+          <button style="border-color:aliceblue;"onclick="dropdown1()">topics</button>
+          <div class="dropdown-content" id="myDropdown1">
+            <input id="myInput1" onkeyup="filterFunction()" placeholder="Search.." type="text" />
+            <a href="#" onclick="displayAnswer('s2Hygiene')">s2-hygiene</a>
+            <a href="#" onclick="displayAnswer('s3Tow')">s3-tow</a>
+            <a href="#" onclick="displayAnswer('s3Rescue')">s3-rescue</a>
+            <a href="#" onclick="displayAnswer('s4Resuscitation')">s4-resuscitation</a>
+            <a href="#" onclick="displayAnswer('s4WaterEAR')">s4-water EAR</a>
+            <a href="#" onclick="displayAnswer('s5EmergencyCare')">s5-Emergency Care</a>
+            <a href="#" onclick="displayAnswer('s5SpinalVideo')">s5-Spinal Rescue</a>
+            <a href="#" onclick="displayAnswer('s6RespiratoryIntro')">s6-respiratory system</a>
+            <a href="#" onclick="displayAnswer('s6CardiovascularSys')">s6-cardiovascular system</a>
+            <a href="#" onclick="displayAnswer('s6Spinal')">s6-central nervous system</a>
+            <a href="#" onclick="displayAnswer('s7Legal')">s7-legality</a>
+            <a href="#" onclick="displayAnswer('s8Rescue')">s8-rescue skills being taught</a>
+            <a href="#" onclick="displayAnswer('s8Resuscitation')">s8-resuscitation skills being taught</a>
+            </div></div>
+        <br/><br/>
+
+    <input id="text_a" type="text;" size="50px;" />
+    <p id="answer"></p>
+    <button class="dropbtn" style="background-color: red; color: white; border-color:aliceblue;" onclick="question()">Chat</button>
+    <div class="dropdown">
+        <button class="dropbtn" style="border-color:aliceblue;"onclick="dropdown()">about</button>
+        <div class="dropdown-content" id="myDropdown">
+          <!--input id="myInput" onkeyup="filterFunction()" placeholder="Search.." type="text" /-->
+          <a href="#" onclick="displayAnswer('mission')">mission-slss</a>
+          <a href="#" onclick="displayAnswer('vision')">vision-slss</a>
+          <a href="#" onclick="displayAnswer('values')">values-slss</a>
+          <a href="#" onclick="displayAnswer('contents')">contents</a>
+          <a href="#" onclick="displayAnswer('syllabus')">syllabus</a>
+          <a href="#" onclick="displayAnswer('disclaimer')">disclaimer</a>
+        </div>
+      </div>
+    </div>
+    
+
+    
+    <script src="chat.js"></script>
+    <script src="script/dropdown.js"></script>
+    <script src="script/dropdown1.js"></script>
+    <script src="list.js"></script>
+    
+</body>
+<span style="bottom: 10px; position: fixed; left: 120px;">2023 Designed by <button class="logo-button" style='background-color:purple; color: white; border-color: antiquewhite; border-radius: 8px; font-weight: 20; font-size: 12px; padding-bottom: 2px;' onclick='hider'><a href="https://techupz.pro" rel="noopener noreferrer" target="_blank" style='color: white; text-decoration: none;' >techupz</a></button> a fintech company</span> 
+</html>
