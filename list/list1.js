@@ -3,7 +3,7 @@ function displayAnswer(elementId) {
 
   //s3Tow.html*    
   
-      if (elementId === 'accompanied rescue') {
+      if (elementId === '1A') {
       alert(`Accompanied Rescue:
       -swim out with a buoyant aid and accompany casualty to -safety without direct contact. 
       -Approach reassure the casualty;   
@@ -12,7 +12,7 @@ function displayAnswer(elementId) {
       -provide reassurance throughout.
       (Reference from SLSS manual)`);  
   
-  } else if (elementId === 'non-contact tow') {
+  } else if (elementId === '1B') {
       alert(`Non-Contact Tow:
       -Swim out with a buoyant aid. 
       -Approach reassure the casualty;   
@@ -22,7 +22,7 @@ function displayAnswer(elementId) {
       -hold edge of kickboad and tow casualy prefrebaly with -sidestroke scissors kick.
       (Reference from SLSS manual)`);  
   
-  } else if (elementId === 'extended tow') {
+  } else if (elementId === '1C') {
       alert(`Extended Tow:
       -calm cooperative casualty;   
       -hold casualty's chin, 
@@ -31,7 +31,7 @@ function displayAnswer(elementId) {
       -maintain observation of casualty. 
       (Reference from SLSS manual)`);  
       
-  } else if (elementId === 'clothing tow') {
+  } else if (elementId === '1D') {
       alert(`Clothing Tow:
       -calm cooperative clothed casualty;
       -hold casualty cloths below collar to avoid choking neck,
