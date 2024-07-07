@@ -80,34 +80,35 @@ else if(inputText.toLowerCase().indexOf("updatedb")>-1||inputText.toLowerCase().
 else if(inputText.toLowerCase().indexOf("which")>-1||inputText.toLowerCase().indexOf("complete path")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`which > Display complete path of a specified command.`;}
 //file mgt***
 //author txt files
-else if(inputText.toLowerCase().indexOf("tar")>-1||inputText.toLowerCase().indexOf("bundle files")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("gzip")>-1||inputText.toLowerCase().indexOf("reduce size zip")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("xz")>-1||inputText.toLowerCase().indexOf("reduce size")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("bzip2")>-1||inputText.toLowerCase().indexOf("compression")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("zip")>-1||inputText.toLowerCase().indexOf("archive")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("tar")>-1||inputText.toLowerCase().indexOf("bundle files")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`tar [options][filename] >  Bundle files for easier transfer.`;}
+else if(inputText.toLowerCase().indexOf("gzip")>-1||inputText.toLowerCase().indexOf("reduce size zip")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`gzip [options][filename] >  Reduce size of files.`;}
+else if(inputText.toLowerCase().indexOf("xz")>-1||inputText.toLowerCase().indexOf("reduce size")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`xz [options][filename] > Reduce size of files.`;}
+else if(inputText.toLowerCase().indexOf("bzip2")>-1||inputText.toLowerCase().indexOf("compression")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`bzip2 > Manage file compression.`;}
+else if(inputText.toLowerCase().indexOf("zip")>-1||inputText.toLowerCase().indexOf("archive")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`zip > Reduce size of files with archiving functionality.`;}
 //author txt files***
 //sw mgt
-else if(inputText.toLowerCase().indexOf("rpm")>-1||inputText.toLowerCase().indexOf("pkg Rhel")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("yum")>-1||inputText.toLowerCase().indexOf("sw pkg Rhel")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("apt")>-1||inputText.toLowerCase().indexOf("pkg debian")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("dpkg")>-1||inputText.toLowerCase().indexOf("sw older debian")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("wget")>-1||inputText.toLowerCase().indexOf("download from sites")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("curl")>-1||inputText.toLowerCase().indexOf("download from site2")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("rpm")>-1||inputText.toLowerCase().indexOf("pkg Rhel")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`rpm [options][pkg name] >  Package management in Red Hat distros.`;}
+else if(inputText.toLowerCase().indexOf("yum")>-1||inputText.toLowerCase().indexOf("sw pkg Rhel")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`yum [options][pkg name] >  Software package management in Red Hat distros`;}
+else if(inputText.toLowerCase().indexOf("apt")>-1||inputText.toLowerCase().indexOf("pkg debian")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`apt > Package management in Debian-based distros`;}
+else if(inputText.toLowerCase().indexOf("dpkg")>-1||inputText.toLowerCase().indexOf("sw older debian")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`dpkg > Manage software packages in older Debian-based distros.`;}
+else if(inputText.toLowerCase().indexOf("wget")>-1||inputText.toLowerCase().indexOf("download from sites")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=` wget [options]{URL} > Download package files housed on websites from the command line.`;}
+else if(inputText.toLowerCase().indexOf("curl")>-1||inputText.toLowerCase().indexOf("download from site2")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`curl [options]{URL} >  Download package files housed on websites from the command line.`;}
 //sw mgt***
 //adm storage
-else if(inputText.toLowerCase().indexOf("lsblk")>-1||inputText.toLowerCase().indexOf("storage device")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lsscsi")>-1||inputText.toLowerCase().indexOf("SCSI devices")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("fdisk")>-1||inputText.toLowerCase().indexOf("partitions")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("parted")>-1||inputText.toLowerCase().indexOf("resize partition")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("mkfs")>-1||inputText.toLowerCase().indexOf("format")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("mount")>-1||inputText.toLowerCase().indexOf("attach FHS")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("umount")>-1||inputText.toLowerCase().indexOf("detach FHS")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("df")>-1||inputText.toLowerCase().indexOf("display device storage")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("du")>-1||inputText.toLowerCase().indexOf("display device usage")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("e2label")>-1||inputText.toLowerCase().indexOf("labels")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("resize2fs")>-1||inputText.toLowerCase().indexOf("chg ext2/3/4")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("tune2fs")>-1||inputText.toLowerCase().indexOf("config ext2/3/4")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("dumpe2fs")>-1||inputText.toLowerCase().indexOf("dump ext2/3/4")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("lsblk")>-1||inputText.toLowerCase().indexOf("storage device")>-1){document.getElementById("answer").innerHTML=`lsblk {drive-path} >  Display information about storage devices recognized by the system.`;}
+else if(inputText.toLowerCase().indexOf("lsscsi")>-1||inputText.toLowerCase().indexOf("SCSI devices")>-1){document.getElementById("answer").innerHTML=`lsscsi [options] > Display information about SCSI devices.`;}
+else if(inputText.toLowerCase().indexOf("fdisk")>-1||inputText.toLowerCase().indexOf("partitions")>-1){document.getElementById("answer").innerHTML=` fdisk [options]{device-name} >  Create, modify, or delete partitions on a storage drive.`;}
+else if(inputText.toLowerCase().indexOf("parted")>-1||inputText.toLowerCase().indexOf("resize partition")>-1){document.getElementById("answer").innerHTML=` parted [options]{device-name} > Create, destroy, and resize partitions.`;}
+else if(inputText.toLowerCase().indexOf("mkfs")>-1||inputText.toLowerCase().indexOf("format")>-1){document.getElementById("answer").innerHTML=` mkfs [options]{filesystem-name}{partition-name} > Format new partitions.`;}
+else if(inputText.toLowerCase().indexOf("mount")>-1||inputText.toLowerCase().indexOf("attach FHS")>-1){document.getElementById("answer").innerHTML=` mount {filesystem-name}{directory-name} >  Attach storage to the FHS.`;}
+else if(inputText.toLowerCase().indexOf("umount")>-1||inputText.toLowerCase().indexOf("detach FHS")>-1){document.getElementById("answer").innerHTML=`umount {filesystem-name}{directory-name} > Detach storage from the FHS.`;}
+else if(inputText.toLowerCase().indexOf("df")>-1||inputText.toLowerCase().indexOf("display device storage")>-1){document.getElementById("answer").innerHTML=`df [options]{directory-name} > Display device storage information.`;}
+else if(inputText.toLowerCase().indexOf("du")>-1||inputText.toLowerCase().indexOf("display device usage")>-1){document.getElementById("answer").innerHTML=`du [options] {directory-name} > Display device usage information.`;}
+else if(inputText.toLowerCase().indexOf("e2label")>-1||inputText.toLowerCase().indexOf("labels")>-1){document.getElementById("answer").innerHTML=` e2label /dev/{device name}{partition number} {labelname} > Display or modify file system labels.`;}
+else if(inputText.toLowerCase().indexOf("resize2fs")>-1||inputText.toLowerCase().indexOf("chg ext2/3/4")>-1){document.getElementById("answer").innerHTML=`resize2fs [options] {device/file system name} [desired size] > Change the size of an ext2/3/4 file system on a device`;}
+else if(inputText.toLowerCase().indexOf("tune2fs")>-1||inputText.toLowerCase().indexOf("config ext2/3/4")>-1){document.getElementById("answer").innerHTML=`tune2fs [options]  
+{device/ file system name} > Configure parameters associated with an ext2/3/4 file system.`;}
+else if(inputText.toLowerCase().indexOf("dumpe2fs")>-1||inputText.toLowerCase().indexOf("dump ext2/3/4")>-1){document.getElementById("answer").innerHTML=` dumpe2fs [options] {device/ filesystem name} > Dump ext2, ext3,and ext4 file system information.`;}
 else if(inputText.toLowerCase().indexOf("cryptsetup")>-1||inputText.toLowerCase().indexOf("encrypt")>-1){document.getElementById("answer").innerHTML=``;}
 else if(inputText.toLowerCase().indexOf("shred")>-1||inputText.toLowerCase().indexOf("wipe storage device")>-1){document.getElementById("answer").innerHTML=``;}
 else if(inputText.toLowerCase().indexOf("iostat")>-1||inputText.toLowerCase().indexOf("display CPU storage")>-1){document.getElementById("answer").innerHTML=``;}
