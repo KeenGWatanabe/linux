@@ -109,76 +109,362 @@ else if(inputText.toLowerCase().indexOf("resize2fs")>-1||inputText.toLowerCase()
 else if(inputText.toLowerCase().indexOf("tune2fs")>-1||inputText.toLowerCase().indexOf("config ext2/3/4")>-1){document.getElementById("answer").innerHTML=`tune2fs [options]  
 {device/ file system name} > Configure parameters associated with an ext2/3/4 file system.`;}
 else if(inputText.toLowerCase().indexOf("dumpe2fs")>-1||inputText.toLowerCase().indexOf("dump ext2/3/4")>-1){document.getElementById("answer").innerHTML=` dumpe2fs [options] {device/ filesystem name} > Dump ext2, ext3,and ext4 file system information.`;}
-else if(inputText.toLowerCase().indexOf("cryptsetup")>-1||inputText.toLowerCase().indexOf("encrypt")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("shred")>-1||inputText.toLowerCase().indexOf("wipe storage device")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("iostat")>-1||inputText.toLowerCase().indexOf("display CPU storage")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ioping")>-1||inputText.toLowerCase().indexOf("report latency")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("cryptsetup")>-1||inputText.toLowerCase().indexOf("encrypt")>-1){document.getElementById("answer").innerHTML=`cryptsetup  
+[options]  
+{action}  
+[action  
+arguments]
+ Encrypt data  
+before it is 
+written to disk.`;}
+else if(inputText.toLowerCase().indexOf("shred")>-1||inputText.toLowerCase().indexOf("wipe storage device")>-1){document.getElementById("answer").innerHTML=`shred [options] 
+{file-name}
+ Securely wipe a 
+storage device 
+by overwriting 
+contents with 
+random data or 
+all zeros.`;}
+else if(inputText.toLowerCase().indexOf("iostat")>-1||inputText.toLowerCase().indexOf("display CPU storage")>-1){document.getElementById("answer").innerHTML=`iostat  
+[options]  
+[device names]
+ Display reports 
+on CPU and 
+device  
+storage.`;}
+else if(inputText.toLowerCase().indexOf("ioping")>-1||inputText.toLowerCase().indexOf("report latency")>-1){document.getElementById("answer").innerHTML=`ioping  
+[options]  
+{file/ directory/
+ device name}
+ Generate a 
+report of device 
+I/O latency in real 
+time`;}
 //adm storage***
 //mem and kernel
-else if(inputText.toLowerCase().indexOf("hwinfo")>-1||inputText.toLowerCase().indexOf("hardware")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("dmidecode")>-1||inputText.toLowerCase().indexOf("current devices")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lspci")>-1||inputText.toLowerCase().indexOf("devices attached")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lsusb")>-1||inputText.toLowerCase().indexOf("specific busses")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lscpu")>-1||inputText.toLowerCase().indexOf("cpu")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lsmem")>-1||inputText.toLowerCase().indexOf("memory blocks")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ps")>-1||inputText.toLowerCase().indexOf("process status")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("sar")>-1||inputText.toLowerCase().indexOf("system usage")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("nohup")>-1||inputText.toLowerCase().indexOf("prevent ending")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("mkswap")>-1||inputText.toLowerCase().indexOf("swap space")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("swapon")>-1||inputText.toLowerCase().indexOf("activate swap")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("swapoff")>-1||inputText.toLowerCase().indexOf("deactivate swap")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("free")>-1||inputText.toLowerCase().indexOf("free unused")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("vmstat")>-1||inputText.toLowerCase().indexOf("virtual memory")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("modinfo")>-1||inputText.toLowerCase().indexOf("kernel module")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("insmod")>-1||inputText.toLowerCase().indexOf("install module")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("rmmod")>-1||inputText.toLowerCase().indexOf("remove module")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("modprobe")>-1||inputText.toLowerCase().indexOf("add remove module")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("depmod")>-1||inputText.toLowerCase().indexOf("build module")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("sysctl")>-1||inputText.toLowerCase().indexOf("kernel parameters")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("dmesg")>-1||inputText.toLowerCase().indexOf("kernel message buffer")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("hwinfo")>-1||inputText.toLowerCase().indexOf("hardware")>-1){document.getElementById("answer").innerHTML=`hwinfo  
+[options]  
+{device}
+ Display detailed 
+information about 
+hardware  
+resources`;}
+else if(inputText.toLowerCase().indexOf("dmidecode")>-1||inputText.toLowerCase().indexOf("current devices")>-1){document.getElementById("answer").innerHTML=` dmidecode  
+[options]  
+{device}
+ Display system  
+information for  
+current devices.`;}
+else if(inputText.toLowerCase().indexOf("lspci")>-1||inputText.toLowerCase().indexOf("devices attached")>-1){document.getElementById("answer").innerHTML=`lspci  
+[options]
+ Display  
+information about 
+devices attached to  
+specific busses.`;}
+else if(inputText.toLowerCase().indexOf("lsusb")>-1||inputText.toLowerCase().indexOf("specific busses")>-1){document.getElementById("answer").innerHTML=`lsusb  
+[options]
+ Display information 
+about devices  
+attached to 
+ specific busses.`;}
+else if(inputText.toLowerCase().indexOf("lscpu")>-1||inputText.toLowerCase().indexOf("cpu")>-1){document.getElementById("answer").innerHTML=`lscpu  
+[options]
+ Display CPU  
+information.`;}
+else if(inputText.toLowerCase().indexOf("lsmem")>-1||inputText.toLowerCase().indexOf("memory blocks")>-1){document.getElementById("answer").innerHTML=`lsmem  
+[options]
+ Display information 
+about memory blocks.`;}
+else if(inputText.toLowerCase().indexOf("ps")>-1||inputText.toLowerCase().indexOf("process status")>-1){document.getElementById("answer").innerHTML=`ps > Display process  
+status`;}
+else if(inputText.toLowerCase().indexOf("sar")>-1||inputText.toLowerCase().indexOf("system usage")>-1){document.getElementById("answer").innerHTML=`sar  
+[options]
+ Display system usage 
+reports.`;}
+else if(inputText.toLowerCase().indexOf("nohup")>-1||inputText.toLowerCase().indexOf("prevent ending")>-1){document.getElementById("answer").innerHTML=`nohup  
+{command/
+ script}
+ Prevent a process 
+from ending when  
+the user logs off.`;}
+else if(inputText.toLowerCase().indexOf("mkswap")>-1||inputText.toLowerCase().indexOf("swap space")>-1){document.getElementById("answer").innerHTML=` mkswap  
+[options]
+ Create swap space on 
+a storage partition.`;}
+else if(inputText.toLowerCase().indexOf("swapon")>-1||inputText.toLowerCase().indexOf("activate swap")>-1){document.getElementById("answer").innerHTML=`swapon  
+[options]
+ Activate the swap 
+partition on a specific 
+device`;}
+else if(inputText.toLowerCase().indexOf("swapoff")>-1||inputText.toLowerCase().indexOf("deactivate swap")>-1){document.getElementById("answer").innerHTML=`swapoff  
+[options]
+ Deactivate the swap 
+partition on a specific 
+device`;}
+else if(inputText.toLowerCase().indexOf("free")>-1||inputText.toLowerCase().indexOf("free unused")>-1){document.getElementById("answer").innerHTML=`free  
+[options]
+ Display the quantity 
+of free or unused 
+memory.`;}
+else if(inputText.toLowerCase().indexOf("vmstat")>-1||inputText.toLowerCase().indexOf("virtual memory")>-1){document.getElementById("answer").innerHTML=` vmstat  
+[options]
+ Display the virtual 
+memory usage.`;}
+else if(inputText.toLowerCase().indexOf("modinfo")>-1||inputText.toLowerCase().indexOf("kernel module")>-1){document.getElementById("answer").innerHTML=` modinfo  
+[options]  
+{module-name}
+ Display information 
+about a particular 
+kernel module.`;}
+else if(inputText.toLowerCase().indexOf("insmod")>-1||inputText.toLowerCase().indexOf("install module")>-1){document.getElementById("answer").innerHTML=`insmod  
+{module-name}
+ Install a module into 
+the currently running 
+kernel.`;}
+else if(inputText.toLowerCase().indexOf("rmmod")>-1||inputText.toLowerCase().indexOf("remove module")>-1){document.getElementById("answer").innerHTML=` rmmod  
+{module-name}
+ Remove a module 
+from the currently 
+running kernel.`;}
+else if(inputText.toLowerCase().indexOf("modprobe")>-1||inputText.toLowerCase().indexOf("add remove module")>-1){document.getElementById("answer").innerHTML=`modprobe  
+[options]  
+{module-names}
+ Add or remove  
+modules from a  
+kernel. `;}
+else if(inputText.toLowerCase().indexOf("depmod")>-1||inputText.toLowerCase().indexOf("build module")>-1){document.getElementById("answer").innerHTML=`depmod  
+[options]
+ Build the modules.
+ dep file by  
+aggregating all  
+instances of symbols 
+being exported and 
+used.`;}
+else if(inputText.toLowerCase().indexOf("sysctl")>-1||inputText.toLowerCase().indexOf("kernel parameters")>-1){document.getElementById("answer").innerHTML=` sysctl  
+[options]
+ View or set kernel  
+parameters at  
+runtime. `;}
+else if(inputText.toLowerCase().indexOf("dmesg")>-1||inputText.toLowerCase().indexOf("kernel message buffer")>-1){document.getElementById("answer").innerHTML=`dmesg  
+[options]
+ Print any messages 
+that have been sent to 
+the kernel’s message 
+buffer during and 
+after system boot.`;}
 //mem and kernel***
 //svc mgt 
-else if(inputText.toLowerCase().indexOf("systemctl")>-1||inputText.toLowerCase().indexOf("startup")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("service")>-1||inputText.toLowerCase().indexOf("enabling")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("chkconfig")>-1||inputText.toLowerCase().indexOf("control services")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("chkconfig [options]")>-1||inputText.toLowerCase().indexOf("start stop service")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("crontab")>-1||inputText.toLowerCase().indexOf("edit crontab file")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("at")>-1||inputText.toLowerCase().indexOf("task specific time")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("lpr")>-1||inputText.toLowerCase().indexOf("printing")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("date")>-1||inputText.toLowerCase().indexOf("print date")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("timedatectl")>-1||inputText.toLowerCase().indexOf("system date time")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("localectl")>-1||inputText.toLowerCase().indexOf("system locale")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("systemctl")>-1||inputText.toLowerCase().indexOf("startup")>-1){document.getElementById("answer").innerHTML=`systemctl 
+[subcommand]  
+[argument]
+ Manage startup  
+options`;}
+else if(inputText.toLowerCase().indexOf("service")>-1||inputText.toLowerCase().indexOf("enabling")>-1){document.getElementById("answer").innerHTML=`service  
+[options]  
+[service] 
+[subcommand]
+ Manage enabling and 
+starting services under 
+SysVinit`;}
+else if(inputText.toLowerCase().indexOf("chkconfig")>-1||inputText.toLowerCase().indexOf("control services")>-1){document.getElementById("answer").innerHTML=` chkconfig  
+[options]  
+[service] 
+[subcommand]
+ • Control services in 
+each runlevel. `;}
+else if(inputText.toLowerCase().indexOf("chkconfig [options]")>-1||inputText.toLowerCase().indexOf("start stop service")>-1){document.getElementById("answer").innerHTML=` chkconfig  
+[options]  
+[service] 
+[subcommand]
+ • Control services in 
+each runlevel. • Start or stop services 
+during system 
+startup`;}
+else if(inputText.toLowerCase().indexOf("crontab")>-1||inputText.toLowerCase().indexOf("edit crontab file")>-1){document.getElementById("answer").innerHTML=` crontab  
+[options]
+ Schedule an event by 
+editing the crontab file.`;}
+else if(inputText.toLowerCase().indexOf("at")>-1||inputText.toLowerCase().indexOf("task specific time")>-1){document.getElementById("answer").innerHTML=`at [options] 
+{time}
+ Run a task once at a 
+specified time.`;}
+else if(inputText.toLowerCase().indexOf("lpr")>-1||inputText.toLowerCase().indexOf("printing")>-1){document.getElementById("answer").innerHTML=` lpr [options] 
+[file names]
+ Submit files for printing. Lesson 9, 
+T`;}
+else if(inputText.toLowerCase().indexOf("date")>-1||inputText.toLowerCase().indexOf("print date")>-1){document.getElementById("answer").innerHTML=` date [options] 
+[format]
+ Print the date in a  
+specified format`;}
+else if(inputText.toLowerCase().indexOf("timedatectl")>-1||inputText.toLowerCase().indexOf("system date time")>-1){document.getElementById("answer").innerHTML=` timedatectl  
+[options] 
+[subcommand]
+ Set the system date and 
+time information.`;}
+else if(inputText.toLowerCase().indexOf("localectl")>-1||inputText.toLowerCase().indexOf("system locale")>-1){document.getElementById("answer").innerHTML=`localectl  
+[options] 
+[subcommand]
+ View and configure  
+the system locale and  
+keyboard layout  
+settings`;}
 //svc mgt***
 //network config
-else if(inputText.toLowerCase().indexOf("ip")>-1||inputText.toLowerCase().indexOf("IP address")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ifconfig")>-1||inputText.toLowerCase().indexOf("NIC")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("iwconfig")>-1||inputText.toLowerCase().indexOf("wireless NIC")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("nmcli")>-1||inputText.toLowerCase().indexOf("network setting")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ethtool")>-1||inputText.toLowerCase().indexOf("network config")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("hostnamectl")>-1||inputText.toLowerCase().indexOf("hostname")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("netcat")>-1||inputText.toLowerCase().indexOf("test connectivity")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("iftop")>-1||inputText.toLowerCase().indexOf("bandwidth")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("traceroute")>-1||inputText.toLowerCase().indexOf("source destination route")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("tracepath")>-1||inputText.toLowerCase().indexOf("source destination path")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("resolvectl")>-1||inputText.toLowerCase().indexOf("name resolution")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("dig")>-1||inputText.toLowerCase().indexOf("test name resolution")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("nslookup")>-1||inputText.toLowerCase().indexOf("info lookup")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("host")>-1||inputText.toLowerCase().indexOf("info host")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("whois")>-1||inputText.toLowerCase().indexOf("display given host")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("arp")>-1||inputText.toLowerCase().indexOf("discover MAC")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("ip")>-1||inputText.toLowerCase().indexOf("IP address")>-1){document.getElementById("answer").innerHTML=` ip [options]  
+{object} 
+[subcommand]
+ Display IP address, 
+subnet mask, and 
+MAC address settings.`;}
+else if(inputText.toLowerCase().indexOf("ifconfig")>-1||inputText.toLowerCase().indexOf("NIC")>-1){document.getElementById("answer").innerHTML=`ifconfig  
+[options]  
+[interface]
+ Display current  
+IP address  
+information for each 
+NIC recognized by 
+the system.`;}
+else if(inputText.toLowerCase().indexOf("iwconfig")>-1||inputText.toLowerCase().indexOf("wireless NIC")>-1){document.getElementById("answer").innerHTML=`iwconfig  
+[options]  
+[interface]
+ Provide wireless NIC 
+configurations and 
+settings.`;}
+else if(inputText.toLowerCase().indexOf("nmcli")>-1||inputText.toLowerCase().indexOf("network setting")>-1){document.getElementById("answer").innerHTML=`nmcli [options] 
+[subcommand] 
+[arguments]
+ View and manage 
+network settings.`;}
+else if(inputText.toLowerCase().indexOf("ethtool")>-1||inputText.toLowerCase().indexOf("network config")>-1){document.getElementById("answer").innerHTML=`ethtool  
+[options]  
+{device name}
+ Manage NIC driver 
+and network  
+configurations.`;}
+else if(inputText.toLowerCase().indexOf("hostnamectl")>-1||inputText.toLowerCase().indexOf("hostname")>-1){document.getElementById("answer").innerHTML=`hostnamectl  
+[options] 
+[subcommand] 
+[arguments]
+ View system’s 
+network hostname`;}
+else if(inputText.toLowerCase().indexOf("netcat")>-1||inputText.toLowerCase().indexOf("test connectivity")>-1){document.getElementById("answer").innerHTML=`netcat  
+[options]
+ Test connectivity and 
+send data across 
+network connections.`;}
+else if(inputText.toLowerCase().indexOf("iftop")>-1||inputText.toLowerCase().indexOf("bandwidth")>-1){document.getElementById("answer").innerHTML=`iftop [options] 
+[-i {interface}]
+ Display bandwidth 
+usage information.`;}
+else if(inputText.toLowerCase().indexOf("traceroute")>-1||inputText.toLowerCase().indexOf("source destination route")>-1){document.getElementById("answer").innerHTML=`traceroute  
+[options]  
+{destination}
+ Report the network 
+path between the 
+source and  
+destination  
+computers.`;}
+else if(inputText.toLowerCase().indexOf("tracepath")>-1||inputText.toLowerCase().indexOf("source destination path")>-1){document.getElementById("answer").innerHTML=`tracepath  
+[options]  
+{destination}
+ Report the network 
+path between the 
+source and  
+destination  
+computers.`;}
+else if(inputText.toLowerCase().indexOf("resolvectl")>-1||inputText.toLowerCase().indexOf("name resolution")>-1){document.getElementById("answer").innerHTML=`resolvectl query 
+{domain-name}
+ Manually query 
+name resolution 
+services.`;}
+else if(inputText.toLowerCase().indexOf("dig")>-1||inputText.toLowerCase().indexOf("test name resolution")>-1){document.getElementById("answer").innerHTML=` dig {domain 
+name}
+ Test name  
+resolution.`;}
+else if(inputText.toLowerCase().indexOf("nslookup")>-1||inputText.toLowerCase().indexOf("info lookup")>-1){document.getElementById("answer").innerHTML=`nslookup {domain 
+name}
+ Gather information 
+about and test name 
+resolution.`;}
+else if(inputText.toLowerCase().indexOf("host")>-1||inputText.toLowerCase().indexOf("info host")>-1){document.getElementById("answer").innerHTML=`host {domain 
+name}
+ Gather information 
+about and test name 
+resolution.`;}
+else if(inputText.toLowerCase().indexOf("whois")>-1||inputText.toLowerCase().indexOf("display given host")>-1){document.getElementById("answer").innerHTML=`whois [options] 
+{domain name}
+ Display hostname, 
+FQDN, IP address, 
+and other  
+information about  
+a given host.`;}
+else if(inputText.toLowerCase().indexOf("arp")>-1||inputText.toLowerCase().indexOf("discover MAC")>-1){document.getElementById("answer").innerHTML=`arp [options] Discover information 
+about known MAC 
+addresses`;}
 //network config***
 //network security
-else if(inputText.toLowerCase().indexOf("iptables")>-1||inputText.toLowerCase().indexOf("packet filtering stateful")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("firewall-cmd")>-1||inputText.toLowerCase().indexOf("firewall")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ufw")>-1||inputText.toLowerCase().indexOf("nftables")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ping")>-1||inputText.toLowerCase().indexOf("response")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("traceroute")>-1||inputText.toLowerCase().indexOf("each hop route")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("tracepath")>-1||inputText.toLowerCase().indexOf("each hop path")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("mtr")>-1||inputText.toLowerCase().indexOf("packet loss")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("netstat")>-1||inputText.toLowerCase().indexOf("TCP connection")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("ss")>-1||inputText.toLowerCase().indexOf("TCP simple output")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("tcpdump")>-1||inputText.toLowerCase().indexOf("traffic")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("nmap")>-1||inputText.toLowerCase().indexOf("detailed info")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("iptables")>-1||inputText.toLowerCase().indexOf("packet filtering stateful")>-1){document.getElementById("answer").innerHTML=`iptables  
+[options]  
+[-t table]  
+[commands] 
+{chain/rule  
+specification} > Manage packet 
+f
+ iltering and stateful 
+f
+ irewall functions.`;}
+else if(inputText.toLowerCase().indexOf("firewall-cmd")>-1||inputText.toLowerCase().indexOf("firewall")>-1){document.getElementById("answer").innerHTML=`firewall-cmd 
+[options] > Configure firewalld 
+by querying and 
+modifying zones or 
+services as desired.`;}
+else if(inputText.toLowerCase().indexOf("ufw")>-1||inputText.toLowerCase().indexOf("nftables")>-1){document.getElementById("answer").innerHTML=`ufw  
+[options]  
+{action} > Configure nftables 
+or iptables.`;}
+else if(inputText.toLowerCase().indexOf("ping")>-1||inputText.toLowerCase().indexOf("response")>-1){document.getElementById("answer").innerHTML=`ping  
+[options] 
+{destination} > Generate a response 
+request from the 
+sending computer, 
+which should receive 
+a reply from the  
+destination  
+computer.`;}
+else if(inputText.toLowerCase().indexOf("traceroute")>-1||inputText.toLowerCase().indexOf("each hop route")>-1){document.getElementById("answer").innerHTML=`traceroute 
+[options] 
+{destination} > Display each hop 
+along the network 
+path.`;}
+else if(inputText.toLowerCase().indexOf("tracepath")>-1||inputText.toLowerCase().indexOf("each hop path")>-1){document.getElementById("answer").innerHTML=`tracepath  
+[options] 
+{destination} > Display each hop 
+along the network 
+path.`;}
+else if(inputText.toLowerCase().indexOf("mtr")>-1||inputText.toLowerCase().indexOf("packet loss")>-1){document.getElementById("answer").innerHTML=` mtr [options] 
+[hostname] >  Test network 
+connection quality 
+and packet loss.`;}
+else if(inputText.toLowerCase().indexOf("netstat")>-1||inputText.toLowerCase().indexOf("TCP connection")>-1){document.getElementById("answer").innerHTML=`netstat  
+[options] >  Gather information 
+about TCP  
+connections to the 
+system`;}
+else if(inputText.toLowerCase().indexOf("ss")>-1||inputText.toLowerCase().indexOf("TCP simple output")>-1){document.getElementById("answer").innerHTML=`ss [options] > Gather information 
+about TCP  
+connections and 
+display in a simple 
+output.`;}
+else if(inputText.toLowerCase().indexOf("tcpdump")>-1||inputText.toLowerCase().indexOf("traffic")>-1){document.getElementById("answer").innerHTML=`tcpdump  
+[options] [-i 
+{interface}] 
+[host {IP 
+address}] > Determine traffic 
+type and content.`;}
+else if(inputText.toLowerCase().indexOf("nmap")>-1||inputText.toLowerCase().indexOf("detailed info")>-1){document.getElementById("answer").innerHTML=`nmap [options] 
+[target] > Report extremely 
+detailed information 
+about a network.`;}
 //network security***
 //security mgt
 else if(inputText.toLowerCase().indexOf("md5sum")>-1||inputText.toLowerCase().indexOf("MD5")>-1){document.getElementById("answer").innerHTML=``;}
