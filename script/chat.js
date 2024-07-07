@@ -467,38 +467,155 @@ detailed information
 about a network.`;}
 //network security***
 //security mgt
-else if(inputText.toLowerCase().indexOf("md5sum")>-1||inputText.toLowerCase().indexOf("MD5")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("sha#sum")>-1||inputText.toLowerCase().indexOf("SHA")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("chcon")>-1||inputText.toLowerCase().indexOf("SELinux")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("apparmor_status")>-1||inputText.toLowerCase().indexOf("status AppArmor")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("aa-complain")>-1||inputText.toLowerCase().indexOf("AppArmor complain")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("aa-enforce")>-1||inputText.toLowerCase().indexOf("AppArmor enforce")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("aa-disable")>-1||inputText.toLowerCase().indexOf("AppArmor upload")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("aa-unconfined")>-1||inputText.toLowerCase().indexOf("open network sockets")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("md5sum")>-1||inputText.toLowerCase().indexOf("MD5")>-1){document.getElementById("answer").innerHTML=` md5sum  
+options]  
+[file name]
+ Calculate the hash value 
+of a file with the MD5 
+hash function.`;}
+else if(inputText.toLowerCase().indexOf("sha#sum")>-1||inputText.toLowerCase().indexOf("SHA")>-1){document.getElementById("answer").innerHTML=`sha#sum  
+options]  
+[file name]
+ Calculate the hash value 
+of a file with the SHA 
+hash function.`;}
+else if(inputText.toLowerCase().indexOf("chcon")>-1||inputText.toLowerCase().indexOf("SELinux")>-1){document.getElementById("answer").innerHTML=`chcon  
+{-u|-r|-t} 
+{context  
+value} {file 
+or directory 
+name}
+ Temporarily change the 
+SELinux context of a 
+resource.`;}
+else if(inputText.toLowerCase().indexOf("apparmor_status")>-1||inputText.toLowerCase().indexOf("status AppArmor")>-1){document.getElementById("answer").innerHTML=`apparmor_ 
+status > Display the current 
+status of AppArmor 
+profiles.`;}
+else if(inputText.toLowerCase().indexOf("aa-complain")>-1||inputText.toLowerCase().indexOf("AppArmor complain")>-1){document.getElementById("answer").innerHTML=`aa- complain 
+{path to  
+profile}
+ Place an AppArmor  
+profile in complain 
+mode.`;}
+else if(inputText.toLowerCase().indexOf("aa-enforce")>-1||inputText.toLowerCase().indexOf("AppArmor enforce")>-1){document.getElementById("answer").innerHTML=`aa- enforce 
+{path to  
+profile}
+ Place an AppArmor  
+profile in enforce  
+mode. `;}
+else if(inputText.toLowerCase().indexOf("aa-disable")>-1||inputText.toLowerCase().indexOf("AppArmor upload")>-1){document.getElementById("answer").innerHTML=` aa-disable 
+{path to  
+profile}
+ Disable an AppArmor 
+profile, unloading it  
+from the kernel. `;}
+else if(inputText.toLowerCase().indexOf("aa-unconfined")>-1||inputText.toLowerCase().indexOf("open network sockets")>-1){document.getElementById("answer").innerHTML=`aa-unconfined > List processes with open 
+network sockets that 
+don’t have an AppArmor 
+profile loaded.`;}
 //security mgt***
 //script
-else if(inputText.toLowerCase().indexOf("awk")>-1||inputText.toLowerCase().indexOf("search specified")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("sed")>-1||inputText.toLowerCase().indexOf("modify text file")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("find")>-1||inputText.toLowerCase().indexOf("search file criteria")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("tee")>-1||inputText.toLowerCase().indexOf("verify output")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("xargs")>-1||inputText.toLowerCase().indexOf("operate each result")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("export")>-1||inputText.toLowerCase().indexOf("set value")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("env")>-1||inputText.toLowerCase().indexOf("modified environment")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("alias")>-1||inputText.toLowerCase().indexOf("customize environment")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("awk")>-1||inputText.toLowerCase().indexOf("search specified")>-1){document.getElementById("answer").innerHTML=` awk [options] 
+['patterns  
+{actions}'] | 
+{file-names}
+ Search for specified 
+information, and take 
+action when that  
+information is found.`;}
+else if(inputText.toLowerCase().indexOf("sed")>-1||inputText.toLowerCase().indexOf("modify text file")>-1){document.getElementById("answer").innerHTML=`sed {'options/ 
+address/action'} 
+{file-names}
+ Modify text files,  
+especially by searching 
+and replacing.`;}
+else if(inputText.toLowerCase().indexOf("find")>-1||inputText.toLowerCase().indexOf("search file criteria")>-1){document.getElementById("answer").innerHTML=` find {where to 
+search} {search 
+criteria}
+ Search for files based 
+on criteria other than 
+filename.`;}
+else if(inputText.toLowerCase().indexOf("tee")>-1||inputText.toLowerCase().indexOf("verify output")>-1){document.getElementById("answer").innerHTML=` command [options] 
+[arguments] | tee 
+[options]  
+{file-names}
+ Verify the output of a 
+command immediately, 
+and store that output in 
+a file for later reference`;}
+else if(inputText.toLowerCase().indexOf("xargs")>-1||inputText.toLowerCase().indexOf("operate each result")>-1){document.getElementById("answer").innerHTML=`command [options] 
+[arguments] | 
+xargs [options] 
+{command} > Commonly used with  
+the find  command to  
+operate on each result 
+that is found within the 
+f
+ ile or directory search.`;}
+else if(inputText.toLowerCase().indexOf("export")>-1||inputText.toLowerCase().indexOf("set value")>-1){document.getElementById("answer").innerHTML=`export [options] 
+[NAME[=value]] > Set the value of an  
+environment variable for 
+all future Bash sessions.`;}
+else if(inputText.toLowerCase().indexOf("env")>-1||inputText.toLowerCase().indexOf("modified environment")>-1){document.getElementById("answer").innerHTML=`env [options] 
+[NAME=value]  
+[command] >  Run a command with 
+modified environment 
+variables.`;}
+else if(inputText.toLowerCase().indexOf("alias")>-1||inputText.toLowerCase().indexOf("customize environment")>-1){document.getElementById("answer").innerHTML=`alias [alias 
+name[='command 
+with options']] > Customize the shell  
+environment by  
+generating  
+command-line aliases`;}
 //script***
 //IaC 
-else if(inputText.toLowerCase().indexOf("git")>-1||inputText.toLowerCase().indexOf("manage git")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("git")>-1||inputText.toLowerCase().indexOf("manage git")>-1){document.getElementById("answer").innerHTML=`git [options] >  Manage Git repositories`;}
 //IaC***
 //containers
-else if(inputText.toLowerCase().indexOf("docker")>-1||inputText.toLowerCase().indexOf("docker container")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("docker pull")>-1||inputText.toLowerCase().indexOf("pull image")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("docker container")>-1||inputText.toLowerCase().indexOf("manage attribute")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("push")>-1||inputText.toLowerCase().indexOf("upload image")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("pull")>-1||inputText.toLowerCase().indexOf("download image")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("docker")>-1||inputText.toLowerCase().indexOf("docker container")>-1){document.getElementById("answer").innerHTML=`docker 
+subcommand 
+{options} 
+{arguments} > The primary  
+management  
+command for  
+Docker containers.`;}
+else if(inputText.toLowerCase().indexOf("docker pull")>-1||inputText.toLowerCase().indexOf("pull image")>-1){document.getElementById("answer").innerHTML=`docker pull 
+{image-name} >  Pull an image from 
+a registry`;}
+else if(inputText.toLowerCase().indexOf("docker container")>-1||inputText.toLowerCase().indexOf("manage attribute")>-1){document.getElementById("answer").innerHTML=`docker 
+container 
+subcommand 
+{options} 
+{arguments} >  Manage  
+attributes  
+for specified 
+containers.`;}
+else if(inputText.toLowerCase().indexOf("push")>-1||inputText.toLowerCase().indexOf("upload image")>-1){document.getElementById("answer").innerHTML=`Exact syntax 
+depends on the 
+specific container 
+engine >  Upload images to 
+a registry.`;}
+else if(inputText.toLowerCase().indexOf("pull")>-1||inputText.toLowerCase().indexOf("download image")>-1){document.getElementById("answer").innerHTML=`Exact syntax 
+depends on the 
+specific container 
+engine. > Download images 
+from a registry.`;}
 //containers***
 //install linux
-else if(inputText.toLowerCase().indexOf("mkinitrd")>-1||inputText.toLowerCase().indexOf("create initrd")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("grub2-install")>-1||inputText.toLowerCase().indexOf("GRUB2")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("mkinitrd")>-1||inputText.toLowerCase().indexOf("create initrd")>-1){document.getElementById("answer").innerHTML=`mkinitrd  
+[options] 
+{initrd image 
+name} {kernel  
+version} >  Create the initrd 
+image for preloading 
+the kernel modules.`;}
+else if(inputText.toLowerCase().indexOf("grub2-install")>-1||inputText.toLowerCase().indexOf("GRUB2")>-1){document.getElementById("answer").innerHTML=`grub2- 
+install  
+[options]  
+[device name] >  Install the GRUB2 
+boot loader on a  
+storage device.`;}
 else if(inputText.toLowerCase().indexOf("grub2-mkconfig")>-1||inputText.toLowerCase().indexOf("grub config")>-1){document.getElementById("answer").innerHTML=` grub2-mkconfig 
 [-o {filename}]<br />
 Generate a new grub.cfg configuration file, or update an existing one.`;}
