@@ -1,7 +1,7 @@
 function displayAnswer(elementId) {
   if (elementId === '') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a1') {document.getElementById("text_a").value = "ls [option]";}
-else if (elementId === 'a2') {document.getElementById("text_a").value = "cat [filename]";}
+else if (elementId === 'a2') {document.getElementById("text_a").value = "cat";}
 else if (elementId === 'a3') {document.getElementById("text_a").value = "cd /etc";}
 else if (elementId === 'a4') {document.getElementById("text_a").value = "pwd";}
 else if (elementId === 'a5') {document.getElementById("text_a").value = "whoami";}
