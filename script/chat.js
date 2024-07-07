@@ -212,7 +212,9 @@ else if(inputText.toLowerCase().indexOf("pull")>-1||inputText.toLowerCase().inde
 //install linux
 else if(inputText.toLowerCase().indexOf("mkinitrd")>-1||inputText.toLowerCase().indexOf("create initrd")>-1){document.getElementById("answer").innerHTML=``;}
 else if(inputText.toLowerCase().indexOf("grub2-install")>-1||inputText.toLowerCase().indexOf("GRUB2")>-1){document.getElementById("answer").innerHTML=``;}
-else if(inputText.toLowerCase().indexOf("grub2-mkconfig")>-1||inputText.toLowerCase().indexOf("grub config")>-1){document.getElementById("answer").innerHTML=``;}
+else if(inputText.toLowerCase().indexOf("grub2-mkconfig")>-1||inputText.toLowerCase().indexOf("grub config")>-1){document.getElementById("answer").innerHTML=` grub2-mkconfig 
+[-o {filename}]<br />
+Generate a new grub.cfg configuration file, or update an existing one.`;}
 //install linux***
 
 //else if(inputText.toLowerCase().indexOf("")>-1||inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`.Reference from SLSS manual`;}

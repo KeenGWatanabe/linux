@@ -146,23 +146,27 @@ else if (elementId === 'a142') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a143') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a144') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a145') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a146') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a147') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a148') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a149') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a150') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a151') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a152') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a153') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a154') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a155') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a156') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a157') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a158') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a159') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a160') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a161') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a162') {document.getElementById("text_a").value = "";}
+//script
+else if (elementId === 'a146') {document.getElementById("text_a").value = "awk";}
+else if (elementId === 'a147') {document.getElementById("text_a").value = "sed";}
+else if (elementId === 'a148') {document.getElementById("text_a").value = "find";}
+else if (elementId === 'a149') {document.getElementById("text_a").value = "tee";}
+else if (elementId === 'a150') {document.getElementById("text_a").value = "xargs";}
+else if (elementId === 'a151') {document.getElementById("text_a").value = "export";}
+else if (elementId === 'a152') {document.getElementById("text_a").value = "env";}
+else if (elementId === 'a153') {document.getElementById("text_a").value = "alias";}
+//IaC 
+else if (elementId === 'a154') {document.getElementById("text_a").value = "git";}
+//containers
+else if (elementId === 'a155') {document.getElementById("text_a").value = "docker";}
+else if (elementId === 'a156') {document.getElementById("text_a").value = "docker pull";}
+else if (elementId === 'a157') {document.getElementById("text_a").value = "docker container";}
+else if (elementId === 'a158') {document.getElementById("text_a").value = "push";}
+else if (elementId === 'a159') {document.getElementById("text_a").value = "pull";}
+//install linux
+else if (elementId === 'a160') {document.getElementById("text_a").value = "mkinitrd";}
+else if (elementId === 'a161') {document.getElementById("text_a").value = "grub2-install";}
+else if (elementId === 'a162') {document.getElementById("text_a").value = "grub2-mkconfig";}
 
 //else if (elementId === '') {document.getElementById("text_a").value = "";}
 
