@@ -1,7 +1,7 @@
 function displayAnswer(elementId) {
   if (elementId === '') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a1') {document.getElementById("text_a").value = "ls [option]";}
-else if (elementId === 'a2') {document.getElementById("text_a").value = "cat";}
+else if (elementId === 'a2') {document.getElementById("text_a").value = "cat [filename]";}
 else if (elementId === 'a3') {document.getElementById("text_a").value = "cd /etc";}
 else if (elementId === 'a4') {document.getElementById("text_a").value = "pwd";}
 else if (elementId === 'a5') {document.getElementById("text_a").value = "whoami";}
@@ -43,7 +43,7 @@ else if (elementId === 'a36') {document.getElementById("text_a").value = "tree";
 else if (elementId === 'a37') {document.getElementById("text_a").value = "mkdir";}
 else if (elementId === 'a38') {document.getElementById("text_a").value = "cp";}
 else if (elementId === 'a39') {document.getElementById("text_a").value = "mv {location}";}
-else if (elementId === 'a40') {document.getElementById("text_a").value = "mv {filename}";}
+else if (elementId === 'a40') {document.getElementById("text_a").value = "mv {file-name}";}
 else if (elementId === 'a41') {document.getElementById("text_a").value = "rmdir";}
 else if (elementId === 'a42') {document.getElementById("text_a").value = "rm";}
 else if (elementId === 'a43') {document.getElementById("text_a").value = "head";}

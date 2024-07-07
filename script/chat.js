@@ -14,7 +14,7 @@ else if(inputText.toLowerCase().indexOf("thank you")>-1){
 //cmd ref-basic*
 else if(inputText.toLowerCase().indexOf("ls")>-1||inputText.toLowerCase().indexOf("list directory")>-1){document.getElementById("answer").innerHTML=`ls > List the contents of the current directory.`;}
 
-else if(inputText.toLowerCase().indexOf("cat")>-1||inputText.toLowerCase().indexOf("content")>-1){document.getElementById("answer").innerHTML=`cat [filename]: Display the contents of a text file on the screen`;}
+else if(inputText.toLowerCase().indexOf("cat [filename]")>-1||inputText.toLowerCase().indexOf("content")>-1){document.getElementById("answer").innerHTML=`cat [filename]: Display the contents of a text file on the screen`;}
 
 else if(inputText.toLowerCase().indexOf("cd /etc")>-1||inputText.toLowerCase().indexOf("change directory")>-1||inputText.toLowerCase().indexOf("another")>-1&&inputText.toLowerCase().indexOf("directory")>-1){document.getElementById("answer").innerHTML=`cd /etc:  Change from one directory to another.`;}
 
@@ -66,7 +66,7 @@ else if(inputText.toLowerCase().indexOf("tree")>-1||inputText.toLowerCase().inde
 else if(inputText.toLowerCase().indexOf("mkdir")>-1||inputText.toLowerCase().indexOf("create dir")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`mkdir > Create directories along the specified path`;}
 else if(inputText.toLowerCase().indexOf("cp")>-1||inputText.toLowerCase().indexOf("copy file")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`cp > Copy a file into a new location while retaining the source file in its original location`;}
 else if(inputText.toLowerCase().indexOf("mv {location}")>-1||inputText.toLowerCase().indexOf("move file")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`mv >  Place the file elsewhere in the filesystem.`;}
-else if(inputText.toLowerCase().indexOf("mv {filename}")>-1||inputText.toLowerCase().indexOf("rename file")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`mv > The rename command in Bash.`;}
+else if(inputText.toLowerCase().indexOf("mv {file-name}")>-1||inputText.toLowerCase().indexOf("rename file")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`mv > The rename command in Bash.`;}
 else if(inputText.toLowerCase().indexOf("rmdir")>-1||inputText.toLowerCase().indexOf("delete dir")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`rmdir > Remove (delete) a directory with no files in it`;}
 else if(inputText.toLowerCase().indexOf("rm")>-1||inputText.toLowerCase().indexOf("remove dir")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`rm >  Remove (delete) a file or a non-empty directory.`;}
 else if(inputText.toLowerCase().indexOf("head")>-1||inputText.toLowerCase().indexOf("file front")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`head > Display the first 10 lines of a file.`;}
