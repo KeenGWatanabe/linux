@@ -12,7 +12,7 @@ else if(inputText.toLowerCase().indexOf("thank you")>-1){
 			document.getElementById("answer").innerHTML="You are welcome.不用客气。";}
 
 //cmd ref-basic*
-else if(inputText.toLowerCase().indexOf("ls")>-1||inputText.toLowerCase().indexOf("list directory")>-1){document.getElementById("answer").innerHTML=` List the contents of the current directory.`;}
+else if(inputText.toLowerCase().indexOf("ls")>-1||inputText.toLowerCase().indexOf("list directory")>-1){document.getElementById("answer").innerHTML=`ls > List the contents of the current directory.`;}
 
 else if(inputText.toLowerCase().indexOf("cat")>-1||inputText.toLowerCase().indexOf("content")>-1){document.getElementById("answer").innerHTML=`cat [filename]: Display the contents of a text file on the screen`;}
 
@@ -109,205 +109,58 @@ else if(inputText.toLowerCase().indexOf("resize2fs")>-1||inputText.toLowerCase()
 else if(inputText.toLowerCase().indexOf("tune2fs")>-1||inputText.toLowerCase().indexOf("config ext2/3/4")>-1){document.getElementById("answer").innerHTML=`tune2fs [options]  
 {device/ file system name} > Configure parameters associated with an ext2/3/4 file system.`;}
 else if(inputText.toLowerCase().indexOf("dumpe2fs")>-1||inputText.toLowerCase().indexOf("dump ext2/3/4")>-1){document.getElementById("answer").innerHTML=` dumpe2fs [options] {device/ filesystem name} > Dump ext2, ext3,and ext4 file system information.`;}
-else if(inputText.toLowerCase().indexOf("cryptsetup")>-1||inputText.toLowerCase().indexOf("encrypt")>-1){document.getElementById("answer").innerHTML=`cryptsetup  
-[options]  
-{action}  
-[action  
-arguments]
- Encrypt data  
-before it is 
-written to disk.`;}
-else if(inputText.toLowerCase().indexOf("shred")>-1||inputText.toLowerCase().indexOf("wipe storage device")>-1){document.getElementById("answer").innerHTML=`shred [options] 
-{file-name}
- Securely wipe a 
-storage device 
-by overwriting 
-contents with 
-random data or 
-all zeros.`;}
-else if(inputText.toLowerCase().indexOf("iostat")>-1||inputText.toLowerCase().indexOf("display CPU storage")>-1){document.getElementById("answer").innerHTML=`iostat  
-[options]  
-[device names]
- Display reports 
-on CPU and 
-device  
-storage.`;}
-else if(inputText.toLowerCase().indexOf("ioping")>-1||inputText.toLowerCase().indexOf("report latency")>-1){document.getElementById("answer").innerHTML=`ioping  
-[options]  
-{file/ directory/
- device name}
- Generate a 
-report of device 
-I/O latency in real 
-time`;}
+else if(inputText.toLowerCase().indexOf("cryptsetup")>-1||inputText.toLowerCase().indexOf("encrypt")>-1){document.getElementById("answer").innerHTML=`cryptsetup [options] {action}  [action arguments] > Encrypt data before it is written to disk.`;}
+else if(inputText.toLowerCase().indexOf("shred")>-1||inputText.toLowerCase().indexOf("wipe storage device")>-1){document.getElementById("answer").innerHTML=`shred [options] {file-name} > Securely wipe a storage device by overwriting contents with random data or all zeros.`;}
+else if(inputText.toLowerCase().indexOf("iostat")>-1||inputText.toLowerCase().indexOf("display CPU storage")>-1){document.getElementById("answer").innerHTML=`iostat [options] [device names] > Display reports on CPU and device storage.`;}
+else if(inputText.toLowerCase().indexOf("ioping")>-1||inputText.toLowerCase().indexOf("report latency")>-1){document.getElementById("answer").innerHTML=`ioping [options] {file/ directory/ device name} > Generate a report of device I/O latency in real time`;}
 //adm storage***
 //mem and kernel
-else if(inputText.toLowerCase().indexOf("hwinfo")>-1||inputText.toLowerCase().indexOf("hardware")>-1){document.getElementById("answer").innerHTML=`hwinfo  
-[options]  
-{device}
- Display detailed 
-information about 
-hardware  
-resources`;}
-else if(inputText.toLowerCase().indexOf("dmidecode")>-1||inputText.toLowerCase().indexOf("current devices")>-1){document.getElementById("answer").innerHTML=` dmidecode  
-[options]  
-{device}
- Display system  
-information for  
-current devices.`;}
-else if(inputText.toLowerCase().indexOf("lspci")>-1||inputText.toLowerCase().indexOf("devices attached")>-1){document.getElementById("answer").innerHTML=`lspci  
-[options]
- Display  
-information about 
-devices attached to  
-specific busses.`;}
-else if(inputText.toLowerCase().indexOf("lsusb")>-1||inputText.toLowerCase().indexOf("specific busses")>-1){document.getElementById("answer").innerHTML=`lsusb  
-[options]
- Display information 
-about devices  
-attached to 
- specific busses.`;}
-else if(inputText.toLowerCase().indexOf("lscpu")>-1||inputText.toLowerCase().indexOf("cpu")>-1){document.getElementById("answer").innerHTML=`lscpu  
-[options]
- Display CPU  
-information.`;}
-else if(inputText.toLowerCase().indexOf("lsmem")>-1||inputText.toLowerCase().indexOf("memory blocks")>-1){document.getElementById("answer").innerHTML=`lsmem  
-[options]
- Display information 
-about memory blocks.`;}
-else if(inputText.toLowerCase().indexOf("ps")>-1||inputText.toLowerCase().indexOf("process status")>-1){document.getElementById("answer").innerHTML=`ps > Display process  
-status`;}
-else if(inputText.toLowerCase().indexOf("sar")>-1||inputText.toLowerCase().indexOf("system usage")>-1){document.getElementById("answer").innerHTML=`sar  
-[options]
- Display system usage 
-reports.`;}
-else if(inputText.toLowerCase().indexOf("nohup")>-1||inputText.toLowerCase().indexOf("prevent ending")>-1){document.getElementById("answer").innerHTML=`nohup  
-{command/
- script}
- Prevent a process 
-from ending when  
-the user logs off.`;}
-else if(inputText.toLowerCase().indexOf("mkswap")>-1||inputText.toLowerCase().indexOf("swap space")>-1){document.getElementById("answer").innerHTML=` mkswap  
-[options]
- Create swap space on 
-a storage partition.`;}
-else if(inputText.toLowerCase().indexOf("swapon")>-1||inputText.toLowerCase().indexOf("activate swap")>-1){document.getElementById("answer").innerHTML=`swapon  
-[options]
- Activate the swap 
-partition on a specific 
-device`;}
-else if(inputText.toLowerCase().indexOf("swapoff")>-1||inputText.toLowerCase().indexOf("deactivate swap")>-1){document.getElementById("answer").innerHTML=`swapoff  
-[options]
- Deactivate the swap 
-partition on a specific 
-device`;}
-else if(inputText.toLowerCase().indexOf("free")>-1||inputText.toLowerCase().indexOf("free unused")>-1){document.getElementById("answer").innerHTML=`free  
-[options]
- Display the quantity 
-of free or unused 
-memory.`;}
-else if(inputText.toLowerCase().indexOf("vmstat")>-1||inputText.toLowerCase().indexOf("virtual memory")>-1){document.getElementById("answer").innerHTML=` vmstat  
-[options]
- Display the virtual 
-memory usage.`;}
-else if(inputText.toLowerCase().indexOf("modinfo")>-1||inputText.toLowerCase().indexOf("kernel module")>-1){document.getElementById("answer").innerHTML=` modinfo  
-[options]  
-{module-name}
- Display information 
-about a particular 
-kernel module.`;}
-else if(inputText.toLowerCase().indexOf("insmod")>-1||inputText.toLowerCase().indexOf("install module")>-1){document.getElementById("answer").innerHTML=`insmod  
-{module-name}
- Install a module into 
-the currently running 
-kernel.`;}
-else if(inputText.toLowerCase().indexOf("rmmod")>-1||inputText.toLowerCase().indexOf("remove module")>-1){document.getElementById("answer").innerHTML=` rmmod  
-{module-name}
- Remove a module 
-from the currently 
-running kernel.`;}
-else if(inputText.toLowerCase().indexOf("modprobe")>-1||inputText.toLowerCase().indexOf("add remove module")>-1){document.getElementById("answer").innerHTML=`modprobe  
-[options]  
-{module-names}
- Add or remove  
-modules from a  
-kernel. `;}
-else if(inputText.toLowerCase().indexOf("depmod")>-1||inputText.toLowerCase().indexOf("build module")>-1){document.getElementById("answer").innerHTML=`depmod  
-[options]
- Build the modules.
- dep file by  
-aggregating all  
-instances of symbols 
-being exported and 
-used.`;}
-else if(inputText.toLowerCase().indexOf("sysctl")>-1||inputText.toLowerCase().indexOf("kernel parameters")>-1){document.getElementById("answer").innerHTML=` sysctl  
-[options]
- View or set kernel  
-parameters at  
-runtime. `;}
-else if(inputText.toLowerCase().indexOf("dmesg")>-1||inputText.toLowerCase().indexOf("kernel message buffer")>-1){document.getElementById("answer").innerHTML=`dmesg  
-[options]
- Print any messages 
-that have been sent to 
-the kernel’s message 
-buffer during and 
-after system boot.`;}
+else if(inputText.toLowerCase().indexOf("hwinfo")>-1||inputText.toLowerCase().indexOf("hardware")>-1){document.getElementById("answer").innerHTML=`hwinfo [options] {device}> Display detailed information about hardware resources`;}
+else if(inputText.toLowerCase().indexOf("dmidecode")>-1||inputText.toLowerCase().indexOf("current devices")>-1){document.getElementById("answer").innerHTML=` dmidecode [options] {device} > Display system information for current devices.`;}
+else if(inputText.toLowerCase().indexOf("lspci")>-1||inputText.toLowerCase().indexOf("devices attached")>-1){document.getElementById("answer").innerHTML=`lspci [options] > Display information about devices attached to specific busses.`;}
+else if(inputText.toLowerCase().indexOf("lsusb")>-1||inputText.toLowerCase().indexOf("specific busses")>-1){document.getElementById("answer").innerHTML=`lsusb [options] > Display information about devices attached to  specific busses.`;}
+else if(inputText.toLowerCase().indexOf("lscpu")>-1||inputText.toLowerCase().indexOf("cpu")>-1){document.getElementById("answer").innerHTML=`lscpu [options] > Display CPU information.`;}
+else if(inputText.toLowerCase().indexOf("lsmem")>-1||inputText.toLowerCase().indexOf("memory blocks")>-1){document.getElementById("answer").innerHTML=`lsmem [options] > Display information about memory blocks.`;}
+else if(inputText.toLowerCase().indexOf("ps")>-1||inputText.toLowerCase().indexOf("process status")>-1){document.getElementById("answer").innerHTML=`ps > Display process status`;}
+else if(inputText.toLowerCase().indexOf("sar")>-1||inputText.toLowerCase().indexOf("system usage")>-1){document.getElementById("answer").innerHTML=`sar [options] >Display system usage reports.`;}
+else if(inputText.toLowerCase().indexOf("nohup")>-1||inputText.toLowerCase().indexOf("prevent ending")>-1){document.getElementById("answer").innerHTML=`nohup {command/ script} > Prevent a process from ending when the user logs off.`;}
+else if(inputText.toLowerCase().indexOf("mkswap")>-1||inputText.toLowerCase().indexOf("swap space")>-1){document.getElementById("answer").innerHTML=` mkswap [options] > Create swap space on a storage partition.`;}
+else if(inputText.toLowerCase().indexOf("swapon")>-1||inputText.toLowerCase().indexOf("activate swap")>-1){document.getElementById("answer").innerHTML=`swapon [options] > Activate the swap partition on a specific device`;}
+else if(inputText.toLowerCase().indexOf("swapoff")>-1||inputText.toLowerCase().indexOf("deactivate swap")>-1){document.getElementById("answer").innerHTML=`swapoff [options] >
+ Deactivate the swap partition on a specific device`;}
+else if(inputText.toLowerCase().indexOf("free")>-1||inputText.toLowerCase().indexOf("free unused")>-1){document.getElementById("answer").innerHTML=`free [options] > Display the quantity of free or unused memory.`;}
+else if(inputText.toLowerCase().indexOf("vmstat")>-1||inputText.toLowerCase().indexOf("virtual memory")>-1){document.getElementById("answer").innerHTML=` vmstat [options] > Display the virtual memory usage.`;}
+else if(inputText.toLowerCase().indexOf("modinfo")>-1||inputText.toLowerCase().indexOf("kernel module")>-1){document.getElementById("answer").innerHTML=` modinfo [options] {module-name} > Display information about a particular kernel module.`;}
+else if(inputText.toLowerCase().indexOf("insmod")>-1||inputText.toLowerCase().indexOf("install module")>-1){document.getElementById("answer").innerHTML=`insmod {module-name} > Install a module into the currently running kernel.`;}
+else if(inputText.toLowerCase().indexOf("rmmod")>-1||inputText.toLowerCase().indexOf("remove module")>-1){document.getElementById("answer").innerHTML=` rmmod {module-name} > Remove a module from the currently running kernel.`;}
+else if(inputText.toLowerCase().indexOf("modprobe")>-1||inputText.toLowerCase().indexOf("add remove module")>-1){document.getElementById("answer").innerHTML=`modprobe [options] 
+{module-names} > Add or remove modules from a kernel. `;}
+else if(inputText.toLowerCase().indexOf("depmod")>-1||inputText.toLowerCase().indexOf("build module")>-1){document.getElementById("answer").innerHTML=`depmod [options] > Build the modules. dep file by aggregating all instances of symbols being exported and used.`;}
+else if(inputText.toLowerCase().indexOf("sysctl")>-1||inputText.toLowerCase().indexOf("kernel parameters")>-1){document.getElementById("answer").innerHTML=` sysctl [options] > View or set kernel parameters at runtime.`;}
+else if(inputText.toLowerCase().indexOf("dmesg")>-1||inputText.toLowerCase().indexOf("kernel message buffer")>-1){document.getElementById("answer").innerHTML=`dmesg [options] >
+ Print any messages that have been sent to the kernel’s message buffer during and after system boot.`;}
 //mem and kernel***
 //svc mgt 
-else if(inputText.toLowerCase().indexOf("systemctl")>-1||inputText.toLowerCase().indexOf("startup")>-1){document.getElementById("answer").innerHTML=`systemctl 
-[subcommand]  
-[argument]
- Manage startup  
-options`;}
-else if(inputText.toLowerCase().indexOf("service")>-1||inputText.toLowerCase().indexOf("enabling")>-1){document.getElementById("answer").innerHTML=`service  
-[options]  
-[service] 
-[subcommand]
- Manage enabling and 
-starting services under 
-SysVinit`;}
-else if(inputText.toLowerCase().indexOf("chkconfig")>-1||inputText.toLowerCase().indexOf("control services")>-1){document.getElementById("answer").innerHTML=` chkconfig  
-[options]  
-[service] 
-[subcommand]
- • Control services in 
-each runlevel. `;}
-else if(inputText.toLowerCase().indexOf("chkconfig [options]")>-1||inputText.toLowerCase().indexOf("start stop service")>-1){document.getElementById("answer").innerHTML=` chkconfig  
-[options]  
-[service] 
-[subcommand]
- • Control services in 
-each runlevel. • Start or stop services 
-during system 
-startup`;}
-else if(inputText.toLowerCase().indexOf("crontab")>-1||inputText.toLowerCase().indexOf("edit crontab file")>-1){document.getElementById("answer").innerHTML=` crontab  
-[options]
- Schedule an event by 
-editing the crontab file.`;}
-else if(inputText.toLowerCase().indexOf("at")>-1||inputText.toLowerCase().indexOf("task specific time")>-1){document.getElementById("answer").innerHTML=`at [options] 
-{time}
- Run a task once at a 
-specified time.`;}
-else if(inputText.toLowerCase().indexOf("lpr")>-1||inputText.toLowerCase().indexOf("printing")>-1){document.getElementById("answer").innerHTML=` lpr [options] 
-[file names]
- Submit files for printing. Lesson 9, 
-T`;}
-else if(inputText.toLowerCase().indexOf("date")>-1||inputText.toLowerCase().indexOf("print date")>-1){document.getElementById("answer").innerHTML=` date [options] 
-[format]
- Print the date in a  
-specified format`;}
-else if(inputText.toLowerCase().indexOf("timedatectl")>-1||inputText.toLowerCase().indexOf("system date time")>-1){document.getElementById("answer").innerHTML=` timedatectl  
-[options] 
-[subcommand]
- Set the system date and 
-time information.`;}
-else if(inputText.toLowerCase().indexOf("localectl")>-1||inputText.toLowerCase().indexOf("system locale")>-1){document.getElementById("answer").innerHTML=`localectl  
-[options] 
-[subcommand]
- View and configure  
-the system locale and  
-keyboard layout  
-settings`;}
+else if(inputText.toLowerCase().indexOf("systemctl")>-1||inputText.toLowerCase().indexOf("startup")>-1){document.getElementById("answer").innerHTML=`systemctl [subcommand]
+[argument] > Manage startup options`;}
+else if(inputText.toLowerCase().indexOf("service")>-1||inputText.toLowerCase().indexOf("enabling")>-1){document.getElementById("answer").innerHTML=`service [options] [service]
+[subcommand] > Manage enabling and starting services under SysVinit`;}
+else if(inputText.toLowerCase().indexOf("chkconfig")>-1||inputText.toLowerCase().indexOf("control services")>-1){document.getElementById("answer").innerHTML=` chkconfig
+[options] [service][subcommand] > • Control services in each runlevel. `;}
+else if(inputText.toLowerCase().indexOf("chkconfig [options]")>-1||inputText.toLowerCase().indexOf("start stop service")>-1){document.getElementById("answer").innerHTML=` chkconfig 
+[options] [service][subcommand] >  • Control services in each runlevel. • Start or stop services during system startup`;}
+else if(inputText.toLowerCase().indexOf("crontab")>-1||inputText.toLowerCase().indexOf("edit crontab file")>-1){document.getElementById("answer").innerHTML=` crontab 
+[options] > Schedule an event by editing the crontab file.`;}
+else if(inputText.toLowerCase().indexOf("at")>-1||inputText.toLowerCase().indexOf("task specific time")>-1){document.getElementById("answer").innerHTML=`at [options]
+{time} > Run a task once at a specified time.`;}
+else if(inputText.toLowerCase().indexOf("lpr")>-1||inputText.toLowerCase().indexOf("printing")>-1){document.getElementById("answer").innerHTML=` lpr [options]
+[file names] > Submit files for printing.`;}
+else if(inputText.toLowerCase().indexOf("date")>-1||inputText.toLowerCase().indexOf("print date")>-1){document.getElementById("answer").innerHTML=` date [options]
+[format] > Print the date in a specified format`;}
+else if(inputText.toLowerCase().indexOf("timedatectl")>-1||inputText.toLowerCase().indexOf("system date time")>-1){document.getElementById("answer").innerHTML=` timedatectl 
+[options] [subcommand] > Set the system date and time information.`;}
+else if(inputText.toLowerCase().indexOf("localectl")>-1||inputText.toLowerCase().indexOf("system locale")>-1){document.getElementById("answer").innerHTML=`localectl 
+[options] [subcommand] >  View and configure the system locale and keyboard layout settings`;}
 //svc mgt***
 //network config
 else if(inputText.toLowerCase().indexOf("ip")>-1||inputText.toLowerCase().indexOf("IP address")>-1){document.getElementById("answer").innerHTML=` ip [options]  
