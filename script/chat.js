@@ -32,7 +32,7 @@ else if(inputText.toLowerCase().indexOf("whatis")>-1||inputText.toLowerCase().in
 //usr grp cmd
 else if(inputText.toLowerCase().indexOf("passwd")>-1||inputText.toLowerCase().indexOf("usr pw")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`passwd [username] > manage user passwords`;}
 else if(inputText.toLowerCase().indexOf("chage")>-1||inputText.toLowerCase().indexOf("pw settings")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`chage -options > Manage password settings`;}
-else if(inputText.toLowerCase().indexOf("w")>-1||inputText.toLowerCase().indexOf("curr usr")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`w > Display current users on system`;}
+else if(inputText.toLowerCase().indexOf("curr usr")>-1||inputText.toLowerCase().indexOf("w >")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`w > Display current users on system`;}
 else if(inputText.toLowerCase().indexOf("who")>-1||inputText.toLowerCase().indexOf("sys usr")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`who > Display current users on the system`;}
 else if(inputText.toLowerCase().indexOf("useradd")>-1||inputText.toLowerCase().indexOf("add usr")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`useradd > Add a user`;}
 else if(inputText.toLowerCase().indexOf("usermod")>-1||inputText.toLowerCase().indexOf("modify usr")>-1&&inputText.toLowerCase().indexOf("")>-1){document.getElementById("answer").innerHTML=`usermod >  Modify a user`;}

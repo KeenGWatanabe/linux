@@ -11,7 +11,7 @@ else if (elementId === 'a7i') {document.getElementById("text_a").value = "whatis
 //usr grp
 else if (elementId === 'a8') {document.getElementById("text_a").value = "passwd";}
 else if (elementId === 'a9') {document.getElementById("text_a").value = "chage";}
-else if (elementId === 'a10') {document.getElementById("text_a").value = "w";}
+else if (elementId === 'a10') {document.getElementById("text_a").value = "curr usr";}
 else if (elementId === 'a11') {document.getElementById("text_a").value = "who";}
 else if (elementId === 'a12') {document.getElementById("text_a").value = "useradd";}
 else if (elementId === 'a13') {document.getElementById("text_a").value = "usermod";}
