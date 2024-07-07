@@ -8,6 +8,7 @@ else if (elementId === 'a5') {document.getElementById("text_a").value = "whoami"
 else if (elementId === 'a6') {document.getElementById("text_a").value = "touch [filename]";}
 else if (elementId === 'a7') {document.getElementById("text_a").value = "man [command]";}
 else if (elementId === 'a7i') {document.getElementById("text_a").value = "whatis [command]";}
+//usr grp
 else if (elementId === 'a8') {document.getElementById("text_a").value = "cmd";}
 else if (elementId === 'a9') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a10') {document.getElementById("text_a").value = "";}
@@ -22,6 +23,7 @@ else if (elementId === 'a18') {document.getElementById("text_a").value = "hle";}
 else if (elementId === 'a19') {document.getElementById("text_a").value = "incorporation";}
 else if (elementId === 'a20') {document.getElementById("text_a").value = "what's debit & credit";}
 else if (elementId === 'a21') {document.getElementById("text_a").value = "keep records how long";}
+//permissions
 else if (elementId === 'a22') {document.getElementById("text_a").value = "form of record";}
 else if (elementId === 'a23') {document.getElementById("text_a").value = "chatbot ai";}
 else if (elementId === 'a24') {document.getElementById("text_a").value = "describe maintenance";}
@@ -32,6 +34,7 @@ else if (elementId === 'a28') {document.getElementById("text_a").value = "provid
 else if (elementId === 'a29') {document.getElementById("text_a").value = "why choose you";}
 else if (elementId === 'a30') {document.getElementById("text_a").value = "most love about your job?";}
 else if (elementId === 'a31') {document.getElementById("text_a").value = "inspire the company";}
+//file mgt
 else if (elementId === 'a32') {document.getElementById("text_a").value = "problems";}
 else if (elementId === 'a33') {document.getElementById("text_a").value = "virtual office";}
 else if (elementId === 'a34') {document.getElementById("text_a").value = "";}
@@ -52,17 +55,20 @@ else if (elementId === 'a48') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a49') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a50') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a51') {document.getElementById("text_a").value = "";}
+//author txt file
 else if (elementId === 'a52') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a53') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a54') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a55') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a56') {document.getElementById("text_a").value = "";}
+//svc mgt
 else if (elementId === 'a57') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a58') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a59') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a60') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a61') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a62') {document.getElementById("text_a").value = "";}
+//adm storage
 else if (elementId === 'a63') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a64') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a65') {document.getElementById("text_a").value = "";}
@@ -80,6 +86,7 @@ else if (elementId === 'a76') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a77') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a78') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a79') {document.getElementById("text_a").value = "";}
+//mem & kernel
 else if (elementId === 'a80') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a81') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a82') {document.getElementById("text_a").value = "";}
@@ -101,6 +108,7 @@ else if (elementId === 'a97') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a98') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a99') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a100') {document.getElementById("text_a").value = "";}
+//svc mgt
 else if (elementId === 'a101') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a102') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a103') {document.getElementById("text_a").value = "";}
@@ -111,41 +119,44 @@ else if (elementId === 'a107') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a108') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a109') {document.getElementById("text_a").value = "";}
 else if (elementId === 'a110') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a111') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a112') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a113') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a114') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a115') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a116') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a117') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a118') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a119') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a120') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a121') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a122') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a123') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a124') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a125') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a126') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a127') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a128') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a129') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a130') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a131') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a132') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a133') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a134') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a135') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a136') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a137') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a138') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a139') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a140') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a141') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a142') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a143') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a144') {document.getElementById("text_a").value = "";}
-else if (elementId === 'a145') {document.getElementById("text_a").value = "";}
+//network config
+else if (elementId === 'a111') {document.getElementById("text_a").value = "ip";}
+else if (elementId === 'a112') {document.getElementById("text_a").value = "ifconfig";}
+else if (elementId === 'a113') {document.getElementById("text_a").value = "iwconfig";}
+else if (elementId === 'a114') {document.getElementById("text_a").value = "nmcli";}
+else if (elementId === 'a115') {document.getElementById("text_a").value = "ethtool";}
+else if (elementId === 'a116') {document.getElementById("text_a").value = "hostnamectl";}
+else if (elementId === 'a117') {document.getElementById("text_a").value = "netcat";}
+else if (elementId === 'a118') {document.getElementById("text_a").value = "iftop";}
+else if (elementId === 'a119') {document.getElementById("text_a").value = "traceroute";}
+else if (elementId === 'a120') {document.getElementById("text_a").value = "tracepath";}
+else if (elementId === 'a121') {document.getElementById("text_a").value = "resolvectl";}
+else if (elementId === 'a122') {document.getElementById("text_a").value = "dig";}
+else if (elementId === 'a123') {document.getElementById("text_a").value = "nslookup";}
+else if (elementId === 'a124') {document.getElementById("text_a").value = "host";}
+else if (elementId === 'a125') {document.getElementById("text_a").value = "whois";}
+else if (elementId === 'a126') {document.getElementById("text_a").value = "arp";}
+//network security
+else if (elementId === 'a127') {document.getElementById("text_a").value = "iptables";}
+else if (elementId === 'a128') {document.getElementById("text_a").value = "firewall-cmd";}
+else if (elementId === 'a129') {document.getElementById("text_a").value = "ufw";}
+else if (elementId === 'a130') {document.getElementById("text_a").value = "ping";}
+else if (elementId === 'a131') {document.getElementById("text_a").value = "traceroute";}
+else if (elementId === 'a132') {document.getElementById("text_a").value = "tracepath";}
+else if (elementId === 'a133') {document.getElementById("text_a").value = "mtr";}
+else if (elementId === 'a134') {document.getElementById("text_a").value = "netstat";}
+else if (elementId === 'a135') {document.getElementById("text_a").value = "ss";}
+else if (elementId === 'a136') {document.getElementById("text_a").value = "tcpdump";}
+else if (elementId === 'a137') {document.getElementById("text_a").value = "nmap";}
+//security mgt
+else if (elementId === 'a138') {document.getElementById("text_a").value = "md5sum";}
+else if (elementId === 'a139') {document.getElementById("text_a").value = "sha#sum";}
+else if (elementId === 'a140') {document.getElementById("text_a").value = "chcon";}
+else if (elementId === 'a141') {document.getElementById("text_a").value = "apparmor_status";}
+else if (elementId === 'a142') {document.getElementById("text_a").value = "aa-complain";}
+else if (elementId === 'a143') {document.getElementById("text_a").value = "aa-enforce";}
+else if (elementId === 'a144') {document.getElementById("text_a").value = "aa-disable";}
+else if (elementId === 'a145') {document.getElementById("text_a").value = "aa-unconfined";}
 //script
 else if (elementId === 'a146') {document.getElementById("text_a").value = "awk";}
 else if (elementId === 'a147') {document.getElementById("text_a").value = "sed";}
