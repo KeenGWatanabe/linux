@@ -391,34 +391,17 @@ command-line aliases`;}
 else if(inputText.toLowerCase().indexOf("git")>-1||inputText.toLowerCase().indexOf("manage git")>-1){document.getElementById("answer").innerHTML=`git [options] >  Manage Git repositories`;}
 //IaC***
 //containers
-else if(inputText.toLowerCase().indexOf("docker")>-1||inputText.toLowerCase().indexOf("docker container")>-1){document.getElementById("answer").innerHTML=`docker 
-subcommand 
-{options} 
-{arguments} > The primary  
-management  
-command for  
-Docker containers.`;}
-else if(inputText.toLowerCase().indexOf("docker pull")>-1||inputText.toLowerCase().indexOf("pull image")>-1){document.getElementById("answer").innerHTML=`docker pull 
-{image-name} >  Pull an image from 
-a registry`;}
-else if(inputText.toLowerCase().indexOf("docker container")>-1||inputText.toLowerCase().indexOf("manage attribute")>-1){document.getElementById("answer").innerHTML=`docker 
-container 
-subcommand 
-{options} 
-{arguments} >  Manage  
-attributes  
-for specified 
-containers.`;}
-else if(inputText.toLowerCase().indexOf("push")>-1||inputText.toLowerCase().indexOf("upload image")>-1){document.getElementById("answer").innerHTML=`Exact syntax 
-depends on the 
-specific container 
-engine >  Upload images to 
-a registry.`;}
-else if(inputText.toLowerCase().indexOf("pull")>-1||inputText.toLowerCase().indexOf("download image")>-1){document.getElementById("answer").innerHTML=`Exact syntax 
-depends on the 
-specific container 
-engine. > Download images 
-from a registry.`;}
+else if(inputText.toLowerCase().indexOf("docker")>-1||inputText.toLowerCase().indexOf("docker container")>-1){document.getElementById("answer").innerHTML=`docker subcommand {options} {arguments} > The primary management command for Docker containers.`;}
+else if(inputText.toLowerCase().indexOf("docker pull")>-1||inputText.toLowerCase().indexOf("pull image")>-1){document.getElementById("answer").innerHTML=`docker pull {imageName} >  Pull an image from a registry`;}
+else if(inputText.toLowerCase().indexOf("docker run")>-1||inputText.toLowerCase().indexOf("docker run")>-1){document.getElementById("answer").innerHTML=`docker run {imageName} >  Run containers`;}
+else if(inputText.toLowerCase().indexOf("docker run -d")>-1||inputText.toLowerCase().indexOf("docker run -d")>-1){document.getElementById("answer").innerHTML=`docker run -d {imageName} >  Detached mode`;}
+else if(inputText.toLowerCase().indexOf("docker start")>-1||inputText.toLowerCase().indexOf("docker start")>-1){document.getElementById("answer").innerHTML=`docker start {containerName} >  Start stopped conatiners`;}
+
+
+
+else if(inputText.toLowerCase().indexOf("docker container")>-1||inputText.toLowerCase().indexOf("manage attribute")>-1){document.getElementById("answer").innerHTML=`docker container subcommand {options} {arguments} >  Manage attributes for specified containers.`;}
+else if(inputText.toLowerCase().indexOf("push")>-1||inputText.toLowerCase().indexOf("upload image")>-1){document.getElementById("answer").innerHTML=`Exact syntax depends on the specific container engine >  Upload images to a registry.`;}
+else if(inputText.toLowerCase().indexOf("pull")>-1||inputText.toLowerCase().indexOf("download image")>-1){document.getElementById("answer").innerHTML=`Exact syntax depends on the specific container engine. > Download images from a registry.`;}
 //containers***
 //install linux
 else if(inputText.toLowerCase().indexOf("mkinitrd")>-1||inputText.toLowerCase().indexOf("create initrd")>-1){document.getElementById("answer").innerHTML=`mkinitrd  

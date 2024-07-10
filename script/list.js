@@ -171,6 +171,11 @@ else if (elementId === 'a154') {document.getElementById("text_a").value = "git";
 //containers
 else if (elementId === 'a155') {document.getElementById("text_a").value = "docker";}
 else if (elementId === 'a156') {document.getElementById("text_a").value = "docker pull";}
+else if (elementId === 'a156a') {document.getElementById("text_a").value = "docker run";}
+else if (elementId === 'a156b') {document.getElementById("text_a").value = "docker run -d";}
+else if (elementId === 'a156c') {document.getElementById("text_a").value = "docker start";}
+
+
 else if (elementId === 'a157') {document.getElementById("text_a").value = "docker container";}
 else if (elementId === 'a158') {document.getElementById("text_a").value = "push";}
 else if (elementId === 'a159') {document.getElementById("text_a").value = "pull";}
