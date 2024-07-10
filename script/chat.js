@@ -163,48 +163,13 @@ else if(inputText.toLowerCase().indexOf("localectl")>-1||inputText.toLowerCase()
 [options] [subcommand] >  View and configure the system locale and keyboard layout settings`;}
 //svc mgt***
 //network config
-else if(inputText.toLowerCase().indexOf("ip")>-1||inputText.toLowerCase().indexOf("IP address")>-1){document.getElementById("answer").innerHTML=` ip [options]  
-{object} 
-[subcommand]
- Display IP address, 
-subnet mask, and 
-MAC address settings.`;}
-else if(inputText.toLowerCase().indexOf("ifconfig")>-1||inputText.toLowerCase().indexOf("NIC")>-1){document.getElementById("answer").innerHTML=`ifconfig  
-[options]  
-[interface]
- Display current  
-IP address  
-information for each 
-NIC recognized by 
-the system.`;}
-else if(inputText.toLowerCase().indexOf("iwconfig")>-1||inputText.toLowerCase().indexOf("wireless NIC")>-1){document.getElementById("answer").innerHTML=`iwconfig  
-[options]  
-[interface]
- Provide wireless NIC 
-configurations and 
-settings.`;}
-else if(inputText.toLowerCase().indexOf("nmcli")>-1||inputText.toLowerCase().indexOf("network setting")>-1){document.getElementById("answer").innerHTML=`nmcli [options] 
-[subcommand] 
-[arguments]
- View and manage 
-network settings.`;}
-else if(inputText.toLowerCase().indexOf("ethtool")>-1||inputText.toLowerCase().indexOf("network config")>-1){document.getElementById("answer").innerHTML=`ethtool  
-[options]  
-{device name}
- Manage NIC driver 
-and network  
-configurations.`;}
-else if(inputText.toLowerCase().indexOf("hostnamectl")>-1||inputText.toLowerCase().indexOf("hostname")>-1){document.getElementById("answer").innerHTML=`hostnamectl  
-[options] 
-[subcommand] 
-[arguments]
- View system’s 
-network hostname`;}
-else if(inputText.toLowerCase().indexOf("netcat")>-1||inputText.toLowerCase().indexOf("test connectivity")>-1){document.getElementById("answer").innerHTML=`netcat  
-[options]
- Test connectivity and 
-send data across 
-network connections.`;}
+else if(inputText.toLowerCase().indexOf("ip")>-1||inputText.toLowerCase().indexOf("IP address")>-1){document.getElementById("answer").innerHTML=` ip [options] {object} [subcommand] Display IP address, subnet mask, and MAC address settings.`;}
+else if(inputText.toLowerCase().indexOf("ifconfig")>-1||inputText.toLowerCase().indexOf("NIC")>-1){document.getElementById("answer").innerHTML=`ifconfig [options] [interface] Display current IP address information for each NIC recognized by the system.`;}
+else if(inputText.toLowerCase().indexOf("iwconfig")>-1||inputText.toLowerCase().indexOf("wireless NIC")>-1){document.getElementById("answer").innerHTML=`iwconfig [options] [interface] Provide wireless NIC configurations and settings.`;}
+else if(inputText.toLowerCase().indexOf("nmcli")>-1||inputText.toLowerCase().indexOf("network setting")>-1){document.getElementById("answer").innerHTML=`nmcli [options] [subcommand] [arguments] View and manage network settings.`;}
+else if(inputText.toLowerCase().indexOf("ethtool")>-1||inputText.toLowerCase().indexOf("network config")>-1){document.getElementById("answer").innerHTML=`ethtool [options] {device name} Manage NIC driver and network  configurations.`;}
+else if(inputText.toLowerCase().indexOf("hostnamectl")>-1||inputText.toLowerCase().indexOf("hostname")>-1){document.getElementById("answer").innerHTML=`hostnamectl [options] [subcommand] [arguments] View system’s network hostname`;}
+else if(inputText.toLowerCase().indexOf("netcat")>-1||inputText.toLowerCase().indexOf("test connectivity")>-1){document.getElementById("answer").innerHTML=`netcat [options] Test connectivity and send data across network connections.`;}
 else if(inputText.toLowerCase().indexOf("iftop")>-1||inputText.toLowerCase().indexOf("bandwidth")>-1){document.getElementById("answer").innerHTML=`iftop [options] 
 [-i {interface}]
  Display bandwidth 
