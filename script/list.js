@@ -36,14 +36,14 @@ else if (elementId === 'a30') {document.getElementById("text_a").value = "getfac
 else if (elementId === 'a31') {document.getElementById("text_a").value = "setfacl";}
 //file mgt
 else if (elementId === 'a32') {document.getElementById("text_a").value = "stat";}
-else if (elementId === 'a33') {document.getElementById("text_a").value = "file";}
+else if (elementId === 'a33') {document.getElementById("text_a").value = "'file'";}
 else if (elementId === 'a34') {document.getElementById("text_a").value = "ln";}
 else if (elementId === 'a35') {document.getElementById("text_a").value = "cd";}
 else if (elementId === 'a36') {document.getElementById("text_a").value = "tree";}
 else if (elementId === 'a37') {document.getElementById("text_a").value = "mkdir";}
 else if (elementId === 'a38') {document.getElementById("text_a").value = "cp";}
 else if (elementId === 'a39') {document.getElementById("text_a").value = "mv {location}";}
-else if (elementId === 'a40') {document.getElementById("text_a").value = "mv {filename}";}
+else if (elementId === 'a40') {document.getElementById("text_a").value = "mv {name}";}
 else if (elementId === 'a41') {document.getElementById("text_a").value = "rmdir";}
 else if (elementId === 'a42') {document.getElementById("text_a").value = "rm";}
 else if (elementId === 'a43') {document.getElementById("text_a").value = "head";}
